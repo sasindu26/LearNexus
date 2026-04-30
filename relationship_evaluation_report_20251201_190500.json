@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-12-01 19:05:00",
+  "database_stats": {
+    "articles_with_embeddings": 269,
+    "modules_with_embeddings": 90,
+    "article_module_relationships": 11,
+    "article_article_relationships": 765,
+    "total_relationships": 776
+  },
+  "similarity_accuracy": {
+    "article_module_mae": 0.0,
+    "article_module_max_error": 0.0,
+    "article_module_accuracy_percentage": 100.0,
+    "article_article_mae": 0.28860605575325193,
+    "article_article_max_error": 0.5638815148687688,
+    "article_article_accuracy_percentage": 71.1393944246748
+  },
+  "threshold_effectiveness": {},
+  "clustering_quality": {},
+  "relationship_diversity": {},
+  "technology_domain_coverage": {},
+  "recommendations": [],
+  "error": "The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()"
+}

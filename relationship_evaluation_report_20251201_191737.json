@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-12-01 19:17:35",
+  "database_stats": {
+    "articles_with_embeddings": 269,
+    "modules_with_embeddings": 90,
+    "article_module_relationships": 246,
+    "article_article_relationships": 765,
+    "total_relationships": 1011
+  },
+  "similarity_accuracy": {
+    "article_module_mae": 0.0,
+    "article_module_max_error": 0.0,
+    "article_module_accuracy_percentage": 100.0,
+    "article_article_mae": 0.28860605575325193,
+    "article_article_max_error": 0.5638815148687688,
+    "article_article_accuracy_percentage": 71.1393944246748
+  },
+  "threshold_effectiveness": {
+    "am_similarity_mean": 0.4570736047881961,
+    "am_similarity_std": 0.05847838573938745,
+    "am_similarity_min": 0.3980784293061328,
+    "am_similarity_max": 0.7507291968197587,
+    "am_quality_score": 0.5472276004845303,
+    "am_relationships_count": 246,
+    "aa_similarity_mean": 0.6581085661050625,
+    "aa_similarity_std": 0.05995624020500384,
+    "aa_similarity_min": 0.6001497846104296,
+    "aa_similarity_max": 1.0000000000000004,
+    "aa_quality_score": 0.6520698568169063,
+    "aa_relationships_count": 765,
+    "overall_quality_score": 0.636318552483559,
+    "relationship_balance": 0.3215686274509804
+  },
+  "clustering_quality": {
+    "silhouette_score": 0.0626568229372765,
+    "calinski_harabasz_score": 10.048389368421647,
+    "davies_bouldin_score": 3.54942197072051,
+    "optimal_clusters": 5,
+    "total_articles_analyzed": 269
+  },
+  "relationship_diversity": {
+    "avg_modules_per_article": 3.2368421052631593,
+    "max_modules_per_article": 22.0,
+    "min_modules_per_article": 1.0,
+    "std_modules_per_article": 3.928930036036552,
+    "module_coverage_ratio": 0.7333333333333333,
+    "connected_modules": 66,
+    "total_modules": 90,
+    "avg_similar_per_article": 5.666666666666667,
+    "max_similar_per_article": 28.0,
+    "min_similar_per_article": 1.0,
+    "std_similar_per_article": 6.136506857969804
+  },
+  "technology_domain_coverage": {},
+  "recommendations": [],
+  "error": "'RelationshipQualityEvaluator' object has no attribute 'evaluate_technology_domain_coverage'"
+}

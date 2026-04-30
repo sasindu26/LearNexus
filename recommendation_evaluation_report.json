@@ -1,0 +1,260 @@
+{
+  "dataset_summary": {
+    "total_articles": 269,
+    "articles_with_embeddings": 269,
+    "total_modules": 90,
+    "modules_with_embeddings": 90,
+    "embedding_dimension": 384,
+    "unique_tags": 179
+  },
+  "relationship_evaluation": {
+    "article_module_relationships": {
+      "total_relationships": 11,
+      "calculated_similarities": {
+        "avg_similarity": 0.44764178268568194,
+        "median_similarity": 0.42754743765300024,
+        "std_similarity": 0.05326901510832202,
+        "min_similarity": 0.3618963022313306,
+        "max_similarity": 0.53652265996095
+      },
+      "stored_similarities": {
+        "avg_similarity": 0.6323077072050995
+      },
+      "similarity_accuracy": {
+        "avg_difference": 0.18466592451941768,
+        "max_difference": 0.23407242856410182
+      },
+      "high_quality_relationships": 0,
+      "good_relationships": 3,
+      "weak_relationships": 0,
+      "relationship_details": [
+        {
+          "article_title": "The Ultimate Guide to Data Structures and Algorithms | Mbloging",
+          "module_name": "Algorithms and Complexity",
+          "module_description": "Title: Algorithms and Complexity: A Beginner's Guide to Efficient Problem Solving\n\nWelcome to the 'Algorithms and Complexity' module! This exciting journey will introduce you to essential concepts that underpin efficient problem solving in computer science. Here, we explore techniques for designing algorithms, analyze their efficiency using time and space complexity, and dive into various algorithmic paradigms.\n\nLet's embark on this fascinating adventure together:\n\n1. Algorithm Design Techniques: Learn strategies to craft well-structured, efficient algorithms tailored to tackle complex problems effectively.\n\n2. Sorting and Searching Algorithms: Discover popular methods for sorting data in ascending or descending order, as well as locating specific items within a given dataset.\n\n3. Time and Space Complexity Analysis: Gain insights into how algorithms behave under different scales by understanding Big O notation and analyzing their efficiency in terms of time complexity (O(n), O(log n), O(n^2), etc.) and space complexity.\n\n4. Recursion and Backtracking: Master the art of recursive problem solving and learn advanced techniques like backtracking to navigate through complex problems step by step.\n\n5. Graph Algorithms: Acquire knowledge about various graph algorithms, including Dijkstra's, Prim's, Kruskal's, and more, which help in solving optimization problems involving networks.\n\n6. NP-Completeness and Computational Complexity: Explore the intriguing world of NP-completeness and understand the limitations of computational power and how certain problems scale with input size.\n\n7. Time and Space Complexity (Big O Notation): Deepen your understanding of Big O notation, which simplifies the analysis of algorithmic efficiency and provides a clear picture of an algorithm's performance.\n\n8. Divide and Conquer Algorithms: Learn powerful divide-and-conquer techniques used in algorithms such as QuickSort, MergeSort, and Binary Search.\n\n9. Greedy Algorithms: Master greedy algorithms, which are based on the idea of always choosing the locally optimal choice from the current choices available in an attempt to find a global optimum.\n\n10. Dynamic Programming: Learn dynamic programming techniques for optimizing repetitive subproblems and solving problems recursively, especially when space is at a premium.\n\n11. NP-Completeness and P vs NP: Investigate the distinction between problems that can be solved in polynomial time (P) and NP-complete problems, which are the hardest of the NP class and remain unsolved for many practical applications.\n\nBy the end of this module, you will have a solid foundation in algorithm design and analysis, and the ability to tackle complex problems with confidence! So, let's get started on this amazing journey!",
+          "calculated_similarity": 0.53652265996095,
+          "stored_similarity": 0.61941551103421,
+          "difference": 0.08289285107325994
+        },
+        {
+          "article_title": "Top 11 Python Libraries Every Data Scientist Should Know",
+          "module_name": "Data Science in Python",
+          "module_description": "Welcome to the exciting world of Data Science in Python! This module is designed for beginners who are eager to learn how to analyze and interpret complex data using Python.\n\nIn simple terms, Data Science is about making sense of large amounts of data through statistical analysis, machine learning, and visualization techniques. In this course, you'll be introduced to various tools and libraries within Python that make these tasks easier and more efficient.\n\nHere's a brief overview of what you'll learn:\n\n1. **Python for Data Science**: We'll start by getting comfortable with Python itself, focusing on essential libraries such as NumPy (for numerical computations) and Pandas (for data manipulation and analysis).\n\n2. **Data Manipulation and Cleaning**: You'll learn how to handle, clean, and transform raw data into a format that's ready for analysis. This includes removing missing values, dealing with inconsistent data, and organizing data in a way that makes it easy to work with.\n\n3. **Data Visualization with Matplotlib and Seaborn**: With these libraries, you'll be able to create various types of charts and graphs to help visualize your data and make it easier to understand patterns, trends, and outliers.\n\n4. **Machine Learning Libraries (Scikit-learn)**: You'll delve into the world of machine learning by using Scikit-learn library. Here, you'll learn about various algorithms like linear regression, logistic regression, decision trees, random forests, and support vector machines.\n\n5. **Building Predictive Models**: Using the knowledge gained from machine learning, you'll build predictive models to make predictions based on historical data. This is a crucial step in many data science projects as it helps businesses make informed decisions.\n\n6. **Natural Language Processing (NLP)**: You'll explore text analysis and understanding with NLP techniques. This can be used for sentiment analysis, topic modeling, text classification, and more.\n\n7. **Python for Deep Learning (TensorFlow, Keras)**: Towards the end of the course, you'll learn about deep learning using TensorFlow and Keras. These libraries will enable you to build complex, self-learning systems like neural networks.\n\nTo start your journey in Data Science with Python, begin by mastering the basics of Python programming. Then, as you progress through each topic, practice using real-world datasets and projects to solidify your understanding. Happy learning!",
+          "calculated_similarity": 0.5171503355009712,
+          "stored_similarity": 0.7507291968197587,
+          "difference": 0.23357886131878747
+        },
+        {
+          "article_title": "LIBRARIES USED IN PYTHON FOR DATA SCIENCE",
+          "module_name": "Data Science in Python",
+          "module_description": "Welcome to the exciting world of Data Science in Python! This module is designed for beginners who are eager to learn how to analyze and interpret complex data using Python.\n\nIn simple terms, Data Science is about making sense of large amounts of data through statistical analysis, machine learning, and visualization techniques. In this course, you'll be introduced to various tools and libraries within Python that make these tasks easier and more efficient.\n\nHere's a brief overview of what you'll learn:\n\n1. **Python for Data Science**: We'll start by getting comfortable with Python itself, focusing on essential libraries such as NumPy (for numerical computations) and Pandas (for data manipulation and analysis).\n\n2. **Data Manipulation and Cleaning**: You'll learn how to handle, clean, and transform raw data into a format that's ready for analysis. This includes removing missing values, dealing with inconsistent data, and organizing data in a way that makes it easy to work with.\n\n3. **Data Visualization with Matplotlib and Seaborn**: With these libraries, you'll be able to create various types of charts and graphs to help visualize your data and make it easier to understand patterns, trends, and outliers.\n\n4. **Machine Learning Libraries (Scikit-learn)**: You'll delve into the world of machine learning by using Scikit-learn library. Here, you'll learn about various algorithms like linear regression, logistic regression, decision trees, random forests, and support vector machines.\n\n5. **Building Predictive Models**: Using the knowledge gained from machine learning, you'll build predictive models to make predictions based on historical data. This is a crucial step in many data science projects as it helps businesses make informed decisions.\n\n6. **Natural Language Processing (NLP)**: You'll explore text analysis and understanding with NLP techniques. This can be used for sentiment analysis, topic modeling, text classification, and more.\n\n7. **Python for Deep Learning (TensorFlow, Keras)**: Towards the end of the course, you'll learn about deep learning using TensorFlow and Keras. These libraries will enable you to build complex, self-learning systems like neural networks.\n\nTo start your journey in Data Science with Python, begin by mastering the basics of Python programming. Then, as you progress through each topic, practice using real-world datasets and projects to solidify your understanding. Happy learning!",
+          "calculated_similarity": 0.5151646061343946,
+          "stored_similarity": 0.7492370346984965,
+          "difference": 0.23407242856410182
+        },
+        {
+          "article_title": "Scaling Data Analytics: Building a Starter Kit with Neon, Airflow, and Streamlit",
+          "module_name": "Data Visualization",
+          "module_description": "Title: Introduction to Data Visualization\n\n   Welcome to the \"Data Visualization\" module! In this engaging and accessible course, you'll embark on a journey to discover how to transform raw data into understandable, interactive, and visually appealing presentations. With no prior experience required, you'll learn essential principles of Data Visualization that will guide your creations for effective communication.\n\n   Through the course, we'll explore various techniques used in Graphical Data Representation to make complex information more manageable. You'll gain hands-on experience with popular tools like Tableau and Power BI, as well as learn how to create compelling interactive dashboards using these platforms.\n\n   Additionally, we'll dive into Storytelling with Data – an essential skill in effectively communicating insights from your visualizations. By the end of this module, you'll be able to craft your own data narratives that captivate and engage audiences.\n\n   As we venture further, we'll tackle the challenge of Visualizing Big Data. You'll learn strategies for managing, analyzing, and presenting vast amounts of information in a way that is both meaningful and easy to comprehend.\n\n   So, if you're eager to take your data analysis skills to the next level, dive into the world of Data Visualization with us! Start by familiarizing yourself with the course material, and don't hesitate to ask questions as we progress through the modules together. Happy learning!",
+          "calculated_similarity": 0.47976579487085935,
+          "stored_similarity": 0.5824844544821627,
+          "difference": 0.10271865961130333
+        },
+        {
+          "article_title": "Hands-On Lab: Google Cloud Application Load Balancer (ALB) — Architect-Level Implementation",
+          "module_name": "Cloud Computing",
+          "module_description": "Title: Introduction to Cloud Computing\n\n   Welcome! In this exciting module, we'll explore the world of Cloud Computing – a transformative technology that's reshaping how businesses operate and services are delivered in today's digital age.\n\n   Cloud Computing is essentially the delivery of different services through the internet. Instead of storing and managing data on your local computer or server, you can store and access it via a remote data center using the internet. This allows for greater scalability, flexibility, and cost efficiency.\n\n   Here are some key topics we'll cover:\n\n   1. **Cloud Service Models**: We will discuss the three primary service models – Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Each model provides a different level of service, from managing your own infrastructure to using fully developed software applications.\n\n   2. **Cloud Deployment Models**: You'll learn about the three common deployment models – Public, Private, and Hybrid Clouds. Understanding these will help you choose the right cloud solution for your needs.\n\n   3. **Cloud Security Challenges**: While the cloud offers many benefits, it also introduces new security challenges. We'll discuss best practices to ensure your data is protected in a cloud environment.\n\n   4. **Big Data Technologies in the Cloud**: With the rise of big data, we'll explore how cloud computing enables large-scale data processing and analysis using tools like Hadoop and Spark.\n\n   5. **Serverless Computing**: We will delve into this innovative approach where you don't have to worry about managing servers – the cloud provider dynamically allocates resources as needed based on your application's demand.\n\n   6. **Cloud-based Data Storage Solutions**: Lastly, we'll cover various storage options available in the cloud and how they can help meet your data management needs effectively.\n\n   To get started with this module, you don't need any prior experience. A basic understanding of computing concepts would be beneficial but not required. As you progress through the lessons, you'll find engaging exercises and projects that will help reinforce your learning. Enjoy exploring the realm of Cloud Computing!",
+          "calculated_similarity": 0.43580168052525636,
+          "stored_similarity": 0.582831313642614,
+          "difference": 0.14702963311735762
+        },
+        {
+          "article_title": "Introduction to AWS IAM",
+          "module_name": "Cloud Computing",
+          "module_description": "Title: Introduction to Cloud Computing\n\n   Welcome! In this exciting module, we'll explore the world of Cloud Computing – a transformative technology that's reshaping how businesses operate and services are delivered in today's digital age.\n\n   Cloud Computing is essentially the delivery of different services through the internet. Instead of storing and managing data on your local computer or server, you can store and access it via a remote data center using the internet. This allows for greater scalability, flexibility, and cost efficiency.\n\n   Here are some key topics we'll cover:\n\n   1. **Cloud Service Models**: We will discuss the three primary service models – Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Each model provides a different level of service, from managing your own infrastructure to using fully developed software applications.\n\n   2. **Cloud Deployment Models**: You'll learn about the three common deployment models – Public, Private, and Hybrid Clouds. Understanding these will help you choose the right cloud solution for your needs.\n\n   3. **Cloud Security Challenges**: While the cloud offers many benefits, it also introduces new security challenges. We'll discuss best practices to ensure your data is protected in a cloud environment.\n\n   4. **Big Data Technologies in the Cloud**: With the rise of big data, we'll explore how cloud computing enables large-scale data processing and analysis using tools like Hadoop and Spark.\n\n   5. **Serverless Computing**: We will delve into this innovative approach where you don't have to worry about managing servers – the cloud provider dynamically allocates resources as needed based on your application's demand.\n\n   6. **Cloud-based Data Storage Solutions**: Lastly, we'll cover various storage options available in the cloud and how they can help meet your data management needs effectively.\n\n   To get started with this module, you don't need any prior experience. A basic understanding of computing concepts would be beneficial but not required. As you progress through the lessons, you'll find engaging exercises and projects that will help reinforce your learning. Enjoy exploring the realm of Cloud Computing!",
+          "calculated_similarity": 0.42754743765300024,
+          "stored_similarity": 0.5981297489612727,
+          "difference": 0.17058231130827245
+        },
+        {
+          "article_title": "📚 7 Free Python Books That Will Make You a Better Developer 🚀",
+          "module_name": "Introduction to Computer Science",
+          "module_description": "Title: Introduction to Computer Science (CS)\n\n   Welcome to the 'Introduction to Computer Science' module! This course is designed for beginners with little or no prior knowledge about computers and computer science. It serves as a stepping stone to explore the fascinating world of technology and programming.\n\n   In this module, you will embark on an exciting journey where you will learn:\n\n   1. The basics of computing - Understand what computers are, how they work, and their impact on our daily lives.\n\n   2. Fundamentals of programming - Learn to write simple programs using a programming language such as Python or Java. You'll understand the logic behind creating instructions that a computer can execute.\n\n   3. Data structures - Learn how to store, organize, and retrieve data in a computer efficiently. Understand concepts like arrays, lists, and tables.\n\n   4. Algorithms - Discover step-by-step procedures for solving problems using computational methods. This will help you develop problem-solving skills essential in many areas of life.\n\n   5. Introduction to databases - Learn how data is managed and stored in digital form, understand the concepts behind database design, and the basics of SQL (Structured Query Language).\n\n   To get started with this course, all you need is a basic understanding of mathematics and an open mind to learn new things! As you progress through the module, you'll develop essential skills that will prepare you for more advanced computer science topics. Good luck on your journey, and remember, everyone starts somewhere – enjoy the learning process!",
+          "calculated_similarity": 0.41860352501319337,
+          "stored_similarity": 0.6496087071970067,
+          "difference": 0.23100518218381333
+        },
+        {
+          "article_title": "Azure Global Infrastructure",
+          "module_name": "Cloud Computing",
+          "module_description": "Title: Introduction to Cloud Computing\n\n   Welcome! In this exciting module, we'll explore the world of Cloud Computing – a transformative technology that's reshaping how businesses operate and services are delivered in today's digital age.\n\n   Cloud Computing is essentially the delivery of different services through the internet. Instead of storing and managing data on your local computer or server, you can store and access it via a remote data center using the internet. This allows for greater scalability, flexibility, and cost efficiency.\n\n   Here are some key topics we'll cover:\n\n   1. **Cloud Service Models**: We will discuss the three primary service models – Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Each model provides a different level of service, from managing your own infrastructure to using fully developed software applications.\n\n   2. **Cloud Deployment Models**: You'll learn about the three common deployment models – Public, Private, and Hybrid Clouds. Understanding these will help you choose the right cloud solution for your needs.\n\n   3. **Cloud Security Challenges**: While the cloud offers many benefits, it also introduces new security challenges. We'll discuss best practices to ensure your data is protected in a cloud environment.\n\n   4. **Big Data Technologies in the Cloud**: With the rise of big data, we'll explore how cloud computing enables large-scale data processing and analysis using tools like Hadoop and Spark.\n\n   5. **Serverless Computing**: We will delve into this innovative approach where you don't have to worry about managing servers – the cloud provider dynamically allocates resources as needed based on your application's demand.\n\n   6. **Cloud-based Data Storage Solutions**: Lastly, we'll cover various storage options available in the cloud and how they can help meet your data management needs effectively.\n\n   To get started with this module, you don't need any prior experience. A basic understanding of computing concepts would be beneficial but not required. As you progress through the lessons, you'll find engaging exercises and projects that will help reinforce your learning. Enjoy exploring the realm of Cloud Computing!",
+          "calculated_similarity": 0.4131279879290276,
+          "stored_similarity": 0.6282539336170987,
+          "difference": 0.21512594568807109
+        },
+        {
+          "article_title": "📚 7 Free Python Books That Will Make You a Better Developer 🚀",
+          "module_name": "  Programming Languages and Compiler Design",
+          "module_description": "Title: Introduction to Programming Languages and Compiler Design\n\n   Welcome to the \"Programming Languages and Compiler Design\" module! This course is designed for learners who are new to programming languages and their underlying structures, as well as compiler design - the process of translating source code written in a high-level language into machine code that can be executed by a computer.\n\n   In this course, you'll embark on an exciting journey to understand how programming languages work and what goes behind the scenes when you write and run your code. You'll gain insights into:\n\n   1. The essential characteristics of various high-level programming languages and their purposes.\n   2. The syntax, semantics, and execution models of these programming languages.\n   3. The concept of abstraction in programming and how it simplifies the process of writing programs.\n   4. The role of a compiler in translating source code into machine-readable instructions.\n   5. Compiler design principles, phases, and data structures used during compilation.\n\n   To get started, we recommend you to familiarize yourself with the basics of at least one programming language, such as Python or Java, before diving into this course. This foundational knowledge will help you better grasp the concepts introduced in the module. Additionally, having a basic understanding of computer systems and architecture will also be beneficial.\n\n   By the end of this course, you'll not only have a deepened appreciation for the complexities underlying your favorite programming languages but also acquire valuable skills that can help you write more efficient code and even design your own custom compilers! Happy learning!",
+          "calculated_similarity": 0.4115639513463549,
+          "stored_similarity": 0.6089994726290768,
+          "difference": 0.19743552128272196
+        },
+        {
+          "article_title": "Start Python: To Advanced Topics from basic Strong Foundational concepts Roadmap.",
+          "module_name": "Data Science in Python",
+          "module_description": "Welcome to the exciting world of Data Science in Python! This module is designed for beginners who are eager to learn how to analyze and interpret complex data using Python.\n\nIn simple terms, Data Science is about making sense of large amounts of data through statistical analysis, machine learning, and visualization techniques. In this course, you'll be introduced to various tools and libraries within Python that make these tasks easier and more efficient.\n\nHere's a brief overview of what you'll learn:\n\n1. **Python for Data Science**: We'll start by getting comfortable with Python itself, focusing on essential libraries such as NumPy (for numerical computations) and Pandas (for data manipulation and analysis).\n\n2. **Data Manipulation and Cleaning**: You'll learn how to handle, clean, and transform raw data into a format that's ready for analysis. This includes removing missing values, dealing with inconsistent data, and organizing data in a way that makes it easy to work with.\n\n3. **Data Visualization with Matplotlib and Seaborn**: With these libraries, you'll be able to create various types of charts and graphs to help visualize your data and make it easier to understand patterns, trends, and outliers.\n\n4. **Machine Learning Libraries (Scikit-learn)**: You'll delve into the world of machine learning by using Scikit-learn library. Here, you'll learn about various algorithms like linear regression, logistic regression, decision trees, random forests, and support vector machines.\n\n5. **Building Predictive Models**: Using the knowledge gained from machine learning, you'll build predictive models to make predictions based on historical data. This is a crucial step in many data science projects as it helps businesses make informed decisions.\n\n6. **Natural Language Processing (NLP)**: You'll explore text analysis and understanding with NLP techniques. This can be used for sentiment analysis, topic modeling, text classification, and more.\n\n7. **Python for Deep Learning (TensorFlow, Keras)**: Towards the end of the course, you'll learn about deep learning using TensorFlow and Keras. These libraries will enable you to build complex, self-learning systems like neural networks.\n\nTo start your journey in Data Science with Python, begin by mastering the basics of Python programming. Then, as you progress through each topic, practice using real-world datasets and projects to solidify your understanding. Happy learning!",
+          "calculated_similarity": 0.40691532837716266,
+          "stored_similarity": 0.5991672413462443,
+          "difference": 0.19225191296908167
+        }
+      ]
+    },
+    "article_article_relationships": {
+      "total_relationships": 765,
+      "calculated_similarities": {
+        "avg_similarity": 0.6581085661050625,
+        "median_similarity": 0.6413097002966808,
+        "std_similarity": 0.05995624020500384,
+        "min_similarity": 0.6001497846104296,
+        "max_similarity": 1.0000000000000004
+      },
+      "stored_similarities": {
+        "avg_similarity": 0.6581085661050625
+      },
+      "similarity_accuracy": {
+        "avg_difference": 0.0,
+        "max_difference": 0.0
+      },
+      "high_similarity_pairs": 23,
+      "good_similarity_pairs": 765,
+      "weak_similarity_pairs": 0,
+      "relationship_details": [
+        {
+          "article1_title": "Ddd Python",
+          "article2_title": "Python",
+          "calculated_similarity": 1.0000000000000004,
+          "stored_similarity": 1.0000000000000004,
+          "difference": 0.0
+        },
+        {
+          "article1_title": "Crack Coding Challenges: Master Data Structures & Algorithms with Ease!",
+          "article2_title": "📖👀 Give this a read! 🚀✨",
+          "calculated_similarity": 1.0000000000000002,
+          "stored_similarity": 1.0000000000000002,
+          "difference": 0.0
+        },
+        {
+          "article1_title": "Crack Coding Challenges: Master Data Structures & Algorithms with Ease!",
+          "article2_title": "[Boost]",
+          "calculated_similarity": 1.0000000000000002,
+          "stored_similarity": 1.0000000000000002,
+          "difference": 0.0
+        },
+        {
+          "article1_title": "📖👀 Give this a read! 🚀✨",
+          "article2_title": "[Boost]",
+          "calculated_similarity": 1.0000000000000002,
+          "stored_similarity": 1.0000000000000002,
+          "difference": 0.0
+        },
+        {
+          "article1_title": "Crack Coding Challenges: Master Data Structures & Algorithms with Ease!",
+          "article2_title": "The Experiment Ojalá, performed using Perplexity AI, showed the new algorithm detects triangles in large graphs over 100x faster than NetworkX, with results visualized and benchmarked for accuracy and speed.",
+          "calculated_similarity": 1.0000000000000002,
+          "stored_similarity": 1.0000000000000002,
+          "difference": 0.0
+        },
+        {
+          "article1_title": "📖👀 Give this a read! 🚀✨",
+          "article2_title": "The Experiment Ojalá, performed using Perplexity AI, showed the new algorithm detects triangles in large graphs over 100x faster than NetworkX, with results visualized and benchmarked for accuracy and speed.",
+          "calculated_similarity": 1.0000000000000002,
+          "stored_similarity": 1.0000000000000002,
+          "difference": 0.0
+        },
+        {
+          "article1_title": "[Boost]",
+          "article2_title": "The Experiment Ojalá, performed using Perplexity AI, showed the new algorithm detects triangles in large graphs over 100x faster than NetworkX, with results visualized and benchmarked for accuracy and speed.",
+          "calculated_similarity": 1.0000000000000002,
+          "stored_similarity": 1.0000000000000002,
+          "difference": 0.0
+        },
+        {
+          "article1_title": "Making Cloud Cost Analysis Smarter: Building FinOps Intelligent Agents with Strands and AgentCore",
+          "article2_title": "A Modern Unified Metadata Architecture: New Approaches to Breaking Down Data Silos",
+          "calculated_similarity": 0.9201687062253512,
+          "stored_similarity": 0.9201687062253512,
+          "difference": 0.0
+        },
+        {
+          "article1_title": "Altoona Area School District technology director ready for next chapter - altoonamirror.com",
+          "article2_title": "Altoona Area School District technology director Bryce Cossitor ready for next chapter - altoonamirror.com",
+          "calculated_similarity": 0.9089236231997273,
+          "stored_similarity": 0.9089236231997273,
+          "difference": 0.0
+        },
+        {
+          "article1_title": "The Smartest Technology ETF to Buy With $100 Right Now - The Motley Fool",
+          "article2_title": "The Smartest Technology Stock to Buy With $1,000 Right Now - The Motley Fool",
+          "calculated_similarity": 0.8963816017849003,
+          "stored_similarity": 0.8963816017849003,
+          "difference": 0.0
+        }
+      ]
+    }
+  },
+  "recommendation_quality": {
+    "diversity_metrics": {
+      "diversity_score": 0.7053635919588712,
+      "avg_similarity": 0.29463640804112884,
+      "tag_diversity": 43,
+      "tag_distribution_entropy": 4.695975712100507,
+      "unique_tags_ratio": 2.15
+    },
+    "coverage_metrics": {
+      "catalog_coverage": 0.18587360594795538,
+      "tag_coverage": 0.40782122905027934,
+      "total_items": 269,
+      "recommended_items": 50,
+      "total_tags": 179,
+      "recommended_tags": 73
+    }
+  },
+  "technology_domain_analysis": {
+    "web_development": {
+      "article_count": 33,
+      "percentage": 12.267657992565056
+    },
+    "backend_development": {
+      "article_count": 131,
+      "percentage": 48.698884758364315
+    },
+    "data_science": {
+      "article_count": 178,
+      "percentage": 66.17100371747212
+    },
+    "mobile_development": {
+      "article_count": 6,
+      "percentage": 2.2304832713754648
+    },
+    "devops": {
+      "article_count": 48,
+      "percentage": 17.843866171003718
+    },
+    "databases": {
+      "article_count": 15,
+      "percentage": 5.5762081784386615
+    }
+  },
+  "relationship_quality_score": {
+    "article_module_quality": 0.44764178268568194,
+    "article_module_relationships_count": 11,
+    "high_quality_am_relationships": 0,
+    "article_article_quality": 0.6581085661050625,
+    "article_article_relationships_count": 765,
+    "high_similarity_aa_pairs": 23,
+    "similarity_accuracy": 0.0,
+    "overall_relationship_quality": 0.5528751743953723
+  },
+  "recommendation_system_score": 0.43301947565236865
+}

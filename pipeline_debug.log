@@ -1,0 +1,83 @@
+2025-05-02 14:54:55,393 - INFO - Use pytorch device_name: cpu
+2025-05-02 14:54:55,393 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-02 14:54:59,216 - INFO - Starting new article processing cycle
+2025-05-02 14:54:59,254 - INFO - Fetching new articles...
+2025-05-02 14:55:02,032 - INFO - Fetched 10 new articles
+2025-05-02 14:55:02,075 - INFO - Processed 0 new articles
+2025-05-02 14:55:02,076 - INFO - Starting cluster update process
+2025-05-02 14:55:02,100 - INFO - Clustering 60 articles
+2025-05-02 14:55:02,106 - INFO - Formed 2 clusters
+2025-05-02 14:55:02,107 - INFO - Found 31 noise points
+2025-05-02 14:55:02,107 - INFO - Cluster 0: 24 articles
+2025-05-02 14:55:02,107 - INFO - Cluster 1: 5 articles
+2025-05-02 14:55:02,252 - INFO - Clustering completed in 0.18 seconds
+2025-05-02 14:55:02,252 - INFO - Starting relationship update process
+2025-05-02 14:55:02,299 - INFO - Updating relationships for 60 articles and 90 modules
+2025-05-02 14:55:02,303 - INFO - Average article-module similarity: 0.129
+2025-05-02 14:55:02,303 - INFO - Average article-article similarity: 0.135
+2025-05-02 14:55:03,180 - INFO - Relationship update completed in 0.93 seconds
+2025-05-02 14:55:03,182 - INFO - Pipeline cycle completed in 3.97 seconds
+2025-05-02 14:55:03,182 - INFO - Pipeline Statistics:
+2025-05-02 14:55:03,182 - INFO -   articles_processed: 0
+2025-05-02 14:55:03,182 - INFO -   clusters_formed: 2
+2025-05-02 14:55:03,182 - INFO -   processing_time: 3.96624022099968
+2025-05-02 16:24:12,002 - INFO - Use pytorch device_name: cpu
+2025-05-02 16:24:12,002 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-02 16:24:15,190 - INFO - Starting new article processing cycle
+2025-05-02 16:24:15,232 - ERROR - Pipeline error: No module named 'feedparser'
+2025-05-02 16:28:11,637 - INFO - Use pytorch device_name: cpu
+2025-05-02 16:28:11,637 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-02 16:28:15,399 - INFO - Starting new article processing cycle
+2025-05-02 16:28:15,438 - ERROR - Pipeline error: No module named 'feedparser'
+2025-05-02 16:29:20,941 - INFO - Use pytorch device_name: cpu
+2025-05-02 16:29:20,941 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-02 16:29:24,201 - INFO - Starting new article processing cycle
+2025-05-02 16:29:24,251 - INFO - Fetching articles from multiple sources...
+2025-05-02 16:29:49,847 - INFO - Article counts by source:
+2025-05-02 16:29:49,847 - INFO -   dev.to: 41 articles
+2025-05-02 16:29:49,847 - INFO -   google_news: 10 articles
+2025-05-02 16:29:49,848 - INFO - Processed 0 new articles
+2025-05-02 16:29:49,848 - INFO - Starting cluster update process
+2025-05-02 16:29:49,865 - INFO - Clustering 60 articles
+2025-05-02 16:29:49,872 - INFO - Formed 2 clusters
+2025-05-02 16:29:49,872 - INFO - Found 31 noise points
+2025-05-02 16:29:49,872 - INFO - Cluster 0: 24 articles
+2025-05-02 16:29:49,872 - INFO - Cluster 1: 5 articles
+2025-05-02 16:29:49,984 - INFO - Clustering completed in 0.14 seconds
+2025-05-02 16:29:49,984 - INFO - Starting relationship update process
+2025-05-02 16:29:50,105 - WARNING - No articles or modules found for relationship update
+2025-05-02 16:29:50,106 - INFO - Pipeline cycle completed in 25.90 seconds
+2025-05-02 16:29:50,106 - INFO - Pipeline Statistics:
+2025-05-02 16:29:50,106 - INFO -   articles_processed: 0
+2025-05-02 16:29:50,106 - INFO -   clusters_formed: 2
+2025-05-02 16:29:50,106 - INFO -   processing_time: 25.904577056000562
+2025-05-02 16:29:50,106 - INFO -   Articles by source:
+2025-05-02 16:29:50,106 - INFO -     dev.to: 41
+2025-05-02 16:29:50,106 - INFO -     google_news: 10
+2025-05-02 16:29:50,106 - INFO -   total_sources: 2
+2025-05-02 22:29:50,165 - INFO - Use pytorch device_name: cpu
+2025-05-02 22:29:50,165 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-02 22:29:53,953 - INFO - Starting new article processing cycle
+2025-05-02 22:29:53,953 - INFO - Fetching articles from multiple sources...
+2025-05-02 22:30:17,768 - INFO - Article counts by source:
+2025-05-02 22:30:17,769 - INFO -   dev.to: 41 articles
+2025-05-02 22:30:17,769 - INFO -   google_news: 10 articles
+2025-05-02 22:30:17,769 - INFO - Processed 0 new articles
+2025-05-02 22:30:17,770 - INFO - Starting cluster update process
+2025-05-02 22:30:17,792 - INFO - Clustering 60 articles
+2025-05-02 22:30:17,803 - INFO - Formed 2 clusters
+2025-05-02 22:30:17,803 - INFO - Found 31 noise points
+2025-05-02 22:30:17,803 - INFO - Cluster 0: 24 articles
+2025-05-02 22:30:17,803 - INFO - Cluster 1: 5 articles
+2025-05-02 22:30:18,000 - INFO - Clustering completed in 0.23 seconds
+2025-05-02 22:30:18,001 - INFO - Starting relationship update process
+2025-05-02 22:30:18,034 - WARNING - No articles or modules found for relationship update
+2025-05-02 22:30:18,035 - INFO - Pipeline cycle completed in 24.08 seconds
+2025-05-02 22:30:18,036 - INFO - Pipeline Statistics:
+2025-05-02 22:30:18,036 - INFO -   articles_processed: 0
+2025-05-02 22:30:18,036 - INFO -   clusters_formed: 2
+2025-05-02 22:30:18,036 - INFO -   processing_time: 24.0826212710017
+2025-05-02 22:30:18,036 - INFO -   Articles by source:
+2025-05-02 22:30:18,036 - INFO -     dev.to: 41
+2025-05-02 22:30:18,036 - INFO -     google_news: 10
+2025-05-02 22:30:18,036 - INFO -   total_sources: 2
