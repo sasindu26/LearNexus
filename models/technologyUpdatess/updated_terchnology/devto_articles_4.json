@@ -1,0 +1,577 @@
+[
+    {
+        "title": "The Ultimate Guide to Data Structures and Algorithms | Mbloging",
+        "description": "Data Structures and Algorithms (DSA) are essential topics for any developer. Whether you\u2019re building...",
+        "url": "https://dev.to/muhayminbinmehmood/the-ultimate-guide-to-data-structures-and-algorithms-mbloging-4bf3",
+        "tags": [
+            "datastructures",
+            "algorithms",
+            "python",
+            "programming"
+        ],
+        "published_at": "2025-02-03T13:07:00Z"
+    },
+    {
+        "title": "Set To-Do list as windows wallpaper (coded by sonnet)",
+        "description": "amoy-todo-wallpaper   Set To-Do list as windows wallpaper.   This is a python program coded...",
+        "url": "https://dev.to/casualwriter/set-to-do-list-as-windows-wallpaper-coded-by-sonnet-2dn7",
+        "tags": [
+            "python",
+            "chatgpt",
+            "util",
+            "productivity"
+        ],
+        "published_at": "2025-02-03T16:30:13Z"
+    },
+    {
+        "title": "\ud83d\ude80 Introducing Fincept Terminal: Your Open-Source Bloomberg Alternative! \ud83d\udcc8",
+        "description": "MOST SIMPLE WAY TO GET STARTED - LINK  Dive into the world of finance with Fincept Terminal, the...",
+        "url": "https://dev.to/fintechwarrior/introducing-fincept-terminal-your-open-source-bloomberg-alternative-lc2",
+        "tags": [
+            "python",
+            "ai",
+            "opensource",
+            "softwaredevelopment"
+        ],
+        "published_at": "2025-02-03T15:28:52Z"
+    },
+    {
+        "title": "WebForms.py Update to WebFormsJS 1.6",
+        "description": "The WebForms Core technology continues to evolve, and with the release of WebFormsJS 1.6, the Python...",
+        "url": "https://dev.to/elanatframework/webformspy-update-to-webformsjs-16-1hi4",
+        "tags": [
+            "webformscore",
+            "python",
+            "flask",
+            "django"
+        ],
+        "published_at": "2025-02-03T16:08:43Z"
+    },
+    {
+        "title": "Building a Simple Rock, Paper, Scissors Game in Go",
+        "description": "Rock, Paper, Scissors is a classic game that has been played for generations. In this blog, we will...",
+        "url": "https://dev.to/m_muhd8/building-a-simple-rock-paper-scissors-game-in-go-gn3",
+        "tags": [
+            "go",
+            "gamedev",
+            "learning",
+            "python"
+        ],
+        "published_at": "2025-02-03T15:06:48Z"
+    },
+    {
+        "title": "Resize in PyTorch",
+        "description": "Buy Me a Coffee\u2615  *Memos:    My post explains OxfordIIITPet().   Resize() can resize an image as...",
+        "url": "https://dev.to/hyperkai/resize-in-pytorch-1nod",
+        "tags": [
+            "python",
+            "pytorch",
+            "resize",
+            "v2"
+        ],
+        "published_at": "2025-02-03T14:21:28Z"
+    },
+    {
+        "title": "Python Data Types & Data Structures",
+        "description": "Review this guide on Python data types and data structures, and print the illustrations to help with...",
+        "url": "https://dev.to/mike-vincent/python-data-types-data-structures-47k6",
+        "tags": [
+            "python",
+            "dsa",
+            "career",
+            "interview"
+        ],
+        "published_at": "2025-02-03T14:00:00Z"
+    },
+    {
+        "title": "Crack Coding Challenges: Master Data Structures & Algorithms with Ease!",
+        "description": "The Ultimate Guide to Data Structures and Algorithms |...",
+        "url": "https://dev.to/muhayminbinmehmood/crack-coding-challenges-master-data-structures-algorithms-with-ease-129g",
+        "tags": [
+            "datastructures",
+            "algorithms",
+            "python",
+            "programming"
+        ],
+        "published_at": "2025-02-03T13:10:34Z"
+    },
+    {
+        "title": "Blackjack in Python",
+        "description": "Created a blackjack game for codecademy.  https://github.com/diodemusic/blackjack",
+        "url": "https://dev.to/diodemusic/blackjack-in-python-ben",
+        "tags": [
+            "python",
+            "gamedev"
+        ],
+        "published_at": "2025-02-03T12:57:08Z"
+    },
+    {
+        "title": "Top 11 Python Libraries Every Data Scientist Should Know",
+        "description": "In the ever-evolving field of data science, Python remains the undisputed king due to its simplicity,...",
+        "url": "https://dev.to/tarunfulera1/top-11-python-libraries-every-data-scientist-should-know-4en0",
+        "tags": [
+            "python",
+            "pythonlibraries",
+            "datascientist"
+        ],
+        "published_at": "2025-02-03T16:44:42Z"
+    },
+    {
+        "title": "A multi-head classifier using SetFit for query preprocessing",
+        "description": "Query preprocessing is a crucial step in customer-centric applications, ensuring accurate routing and...",
+        "url": "https://dev.to/mayank_laddha_21ef3e061ff/a-multi-head-classifier-using-setfit-for-query-preprocessing-4c7k",
+        "tags": [
+            "ai",
+            "rag",
+            "python"
+        ],
+        "published_at": "2025-02-03T08:25:48Z"
+    },
+    {
+        "title": "Python Weekend Tasks",
+        "description": "Task:1 Consider you have many photos in a folder.  Check their Properties.  In Properties, you have...",
+        "url": "https://dev.to/guru_prasanna_01/python-weekend-tasks-2ik1",
+        "tags": [
+            "payilagam",
+            "python",
+            "selenium",
+            "tasks"
+        ],
+        "published_at": "2025-02-03T07:41:03Z"
+    },
+    {
+        "title": "Colors with Rio's oklab color space",
+        "description": "While browsing the Rio source I noticed it manages colors  in the Oklab color space which I hadn't...",
+        "url": "https://dev.to/shredwheat/colors-with-rios-oklab-color-space-52fb",
+        "tags": [
+            "python",
+            "rio",
+            "color",
+            "ui"
+        ],
+        "published_at": "2025-02-03T05:59:31Z"
+    },
+    {
+        "title": "Best Backend Frameworks for 2025: A Developer's Guide to Making the Right Choice",
+        "description": "The landscape of backend development is undergoing a radical transformation as we move deeper into...",
+        "url": "https://dev.to/developerbishwas/best-backend-frameworks-for-2025-a-developers-guide-to-making-the-right-choice-45i0",
+        "tags": [
+            "webdev",
+            "javascript",
+            "python",
+            "backend"
+        ],
+        "published_at": "2025-02-03T05:59:22Z"
+    },
+    {
+        "title": "\ud83d\udcd6\ud83d\udc40 Give this a read! \ud83d\ude80\u2728",
+        "description": "\ud83d\udcda\u2728 Advanced Python Tipbook: Metaclasses, Context Managers, and...",
+        "url": "https://dev.to/nihalthakur/give-this-a-read-48b",
+        "tags": [
+            "python",
+            "development",
+            "productivity",
+            "programming"
+        ],
+        "published_at": "2025-02-03T10:18:48Z"
+    },
+    {
+        "title": "DeepFace Based Image Similarity / Resemblance Sorter Gradio APP - Can Be Used to Batch Sort AI images - Works on Real Images Too",
+        "description": "Installers   -           Installer zip file shared here :...",
+        "url": "https://dev.to/furkangozukara/deepface-based-image-similarity-resemblance-sorter-gradio-app-can-be-used-to-batch-sort-ai-43gg",
+        "tags": [
+            "beginners",
+            "ai",
+            "tutorial",
+            "python"
+        ],
+        "published_at": "2025-02-02T22:18:54Z"
+    },
+    {
+        "title": "\ud83d\udcda\u2728 Advanced Python Tipbook: Metaclasses, Context Managers, and the Art of Python Sorcery",
+        "description": "Greetings, fellow code conjurers! \ud83e\uddd9\u2642\ufe0f\ud83d\udcbb Today, we\u2019re diving into the arcane grimoire of Python to...",
+        "url": "https://dev.to/nihalthakur/advanced-python-tipbook-metaclasses-context-managers-and-the-art-of-python-sorcery-4a7e",
+        "tags": [
+            "python",
+            "development",
+            "productivity",
+            "programming"
+        ],
+        "published_at": "2025-02-03T10:14:28Z"
+    },
+    {
+        "title": "How to Create Your First API with Python, Flask and Azure",
+        "description": "Introduction   APIs (Application Programming Interfaces) are the backbone of modern software...",
+        "url": "https://dev.to/otumba/how-to-create-your-first-api-with-python-flask-and-azure-1bef",
+        "tags": [
+            "python",
+            "api",
+            "tutorial",
+            "azure"
+        ],
+        "published_at": "2025-02-03T05:02:30Z"
+    },
+    {
+        "title": "Python Day-32 Object oriented programming(oops), CSV, Matplotlib",
+        "description": "Object oriented programming system(oops):   --&gt;Python is a multi-paradigm...",
+        "url": "https://dev.to/guru_prasanna_01/python-day-32-object-oriented-programmingoops-csv-matplotlib-f4c",
+        "tags": [
+            "python",
+            "oop",
+            "csv",
+            "matplotlib"
+        ],
+        "published_at": "2025-02-03T06:53:38Z"
+    },
+    {
+        "title": "ColorJitter in PyTorch (2)",
+        "description": "Buy Me a Coffee\u2615  *Memos:    My post explains ColorJitter() with brightness and contrast...",
+        "url": "https://dev.to/hyperkai/colorjitter-in-pytorch-2-38h",
+        "tags": [
+            "python",
+            "pytorch",
+            "colorjitter",
+            "v2"
+        ],
+        "published_at": "2025-02-02T20:51:46Z"
+    },
+    {
+        "title": "ColorJitter in PyTorch (1)",
+        "description": "Buy Me a Coffee\u2615  *Memos:    My post explains ColorJitter() with saturation and hue argument.  My...",
+        "url": "https://dev.to/hyperkai/colorjitter-in-pytorch-1-j4n",
+        "tags": [
+            "python",
+            "pytorch",
+            "colorjitter",
+            "v2"
+        ],
+        "published_at": "2025-02-02T20:47:55Z"
+    },
+    {
+        "title": "Open Source Customizable Timer: KEGOMODORO! \u23f3",
+        "description": "Hey everyone! I\u2019ve developed KEGOMODORO, an open-source productivity tool designed to enhance time...",
+        "url": "https://dev.to/kegan/open-source-customizable-timer-kegomodoro-3k9o",
+        "tags": [
+            "productivity",
+            "python",
+            "programming",
+            "github"
+        ],
+        "published_at": "2025-02-02T19:38:55Z"
+    },
+    {
+        "title": "Mastering TCPDump & Python for Ethical Hacking: Network Packet Analysis",
+        "description": "Learn how to use TCPDump for real-time packet capture and analyze network traffic with Python and Scapy. ",
+        "url": "https://dev.to/sebos/mastering-tcpdump-python-for-ethical-hacking-network-packet-analysis-2945",
+        "tags": [
+            "cybersecurity",
+            "python",
+            "pentesting",
+            "infosec"
+        ],
+        "published_at": "2025-02-03T01:02:31Z"
+    },
+    {
+        "title": "Writing search view for Django application",
+        "description": "This tutorial shows, how to build search view for your Django application with SearchVector...",
+        "url": "https://dev.to/xinitd/writing-search-view-for-django-application-3lh8",
+        "tags": [
+            "django",
+            "database",
+            "search",
+            "python"
+        ],
+        "published_at": "2025-02-02T15:55:05Z"
+    },
+    {
+        "title": "Python Basics to Advanced",
+        "description": "Why Learn Python? Python is one of the most beginner-friendly yet powerful programming languages....",
+        "url": "https://dev.to/sumedha00/python-basics-to-advanced-2kb0",
+        "tags": [
+            "programming",
+            "python"
+        ],
+        "published_at": "2025-02-02T12:31:09Z"
+    },
+    {
+        "title": "My First Week Learning from CS50x and CS50P",
+        "description": "Just under a week ago, I revamped my web dev journey by taking up CS50x (Harvard's Intro to Computer...",
+        "url": "https://dev.to/slyalchemist/my-first-week-learning-from-cs50x-and-cs50p-10fg",
+        "tags": [
+            "programming",
+            "beginners",
+            "python",
+            "learning"
+        ],
+        "published_at": "2025-02-02T06:23:20Z"
+    },
+    {
+        "title": "Scaling Data Analytics: Building a Starter Kit with Neon, Airflow, and Streamlit",
+        "description": "Setting up a data analytics project from scratch can be a headache. You need a database, a way to...",
+        "url": "https://dev.to/olgabraginskaya/scaling-data-analytics-building-a-starter-kit-with-neon-airflow-and-streamlit-3f9i",
+        "tags": [
+            "neon",
+            "beginners",
+            "python"
+        ],
+        "published_at": "2025-02-02T09:45:32Z"
+    },
+    {
+        "title": "LIBRARIES USED IN PYTHON FOR DATA SCIENCE",
+        "description": "1.Core Data Manipulation and Analysis Pandas (pandas):  Used for data manipulation and...",
+        "url": "https://dev.to/morriscapt/libraries-used-in-python-for-data-science-25aj",
+        "tags": [
+            "programming",
+            "ai",
+            "beginners",
+            "python"
+        ],
+        "published_at": "2025-02-02T12:13:42Z"
+    },
+    {
+        "title": "Building an AI-powered Financial Behavior Analyzer with NodeJS, Python, SvelteKit, and TailwindCSS - Part 1: The AI Service",
+        "description": "Introduction    Part 2: GitHub OAuth is out on...",
+        "url": "https://dev.to/sirneij/building-an-ai-powered-financial-behavior-analyzer-with-nodejs-python-sveltekit-and-tailwindcss-2658",
+        "tags": [
+            "python",
+            "ai",
+            "webdev"
+        ],
+        "published_at": "2025-02-03T07:03:40Z"
+    },
+    {
+        "title": "\ud83d\udcda 7 Free Python Books That Will Make You a Better Developer \ud83d\ude80",
+        "description": "A handpicked collection of 7 free Python books that will help you master Python \u2014 from the basics to advanced techniques like clean code, automation, and project building.",
+        "url": "https://dev.to/programmerspace/7-free-python-books-that-will-make-you-a-better-developer-5361",
+        "tags": [
+            "programming",
+            "python"
+        ],
+        "published_at": "2025-02-03T01:52:31Z"
+    },
+    {
+        "title": "Sliding Window || Python || Data Structures and Algorithms",
+        "description": "What is Sliding Window Technique ?   Sliding Window Technique is a method where we define a window or...",
+        "url": "https://dev.to/rishabtrivedi/sliding-window-python-data-structures-and-algorithms-16m",
+        "tags": [
+            "webdev",
+            "programming",
+            "python",
+            "career"
+        ],
+        "published_at": "2025-02-02T03:07:26Z"
+    },
+    {
+        "title": "2024: NYSC, 9-5 Wins, and My AI/ML Journey",
+        "description": "This is a submission for the 2025 New Year Writing challenge: Retro\u2019ing and Debugging 2024.          ...",
+        "url": "https://dev.to/nwajeigideon/2024-nysc-9-5-wins-and-my-aiml-journey-5h97",
+        "tags": [
+            "devchallenge",
+            "newyearchallenge",
+            "career",
+            "python"
+        ],
+        "published_at": "2025-02-01T19:29:09Z"
+    },
+    {
+        "title": "Story of a Wordle Solver",
+        "description": "Hurry up, what's a five-letter word with 'i', 'c', 'e' as second, third and fourth letters!  The...",
+        "url": "https://dev.to/breakpoint/story-of-a-wordle-solver-529m",
+        "tags": [
+            "python",
+            "fun",
+            "streamlit"
+        ],
+        "published_at": "2025-02-01T18:26:06Z"
+    },
+    {
+        "title": "AI with AI: Let Robots Talk",
+        "description": "Yesterday, I released a blog post on my blog that had me putting two AI bots together to see what...",
+        "url": "https://dev.to/mileswk/ai-with-ai-let-robots-talk-3lcb",
+        "tags": [
+            "ai",
+            "python"
+        ],
+        "published_at": "2025-02-01T17:09:08Z"
+    },
+    {
+        "title": "Flask kod",
+        "description": "`from flask import Flask from flask import render_template from flask import request import...",
+        "url": "https://dev.to/coosland/flask-kod-40am",
+        "tags": [
+            "flask",
+            "python",
+            "opensource"
+        ],
+        "published_at": "2025-02-01T16:40:16Z"
+    },
+    {
+        "title": "RandomAffine in PyTorch (2)",
+        "description": "Buy Me a Coffee\u2615  *Memos:    My post explains RandomAffine() without shear argument.  My post...",
+        "url": "https://dev.to/hyperkai/randomaffine-in-pytorch-2-8c6",
+        "tags": [
+            "python",
+            "pytorch",
+            "randomaffine",
+            "v2"
+        ],
+        "published_at": "2025-02-01T12:49:05Z"
+    },
+    {
+        "title": "\"Raindrops\" more complex versionofthe'FizzBuzz' challenge Opened a Whole New Idea and Concept.",
+        "description": "Raindrops challenge posed quite a challenge and helped me understand python concepts deeply. Try it...",
+        "url": "https://dev.to/mihsa_instrudy/raindrops-more-complex-versionofthefizzbuzz-challenge-opened-a-whole-new-idea-and-concept-1h2b",
+        "tags": [
+            "raindrops",
+            "python",
+            "exercism",
+            "development"
+        ],
+        "published_at": "2025-02-01T16:51:43Z"
+    },
+    {
+        "title": "6 Common Python Mistakes You Should Avoid (And How to Fix Them!)",
+        "description": "Python is beginner-friendly, but even experienced developers make mistakes. Here are 6 common Python...",
+        "url": "https://dev.to/thameemx/6-common-python-mistakes-you-should-avoid-and-how-to-fix-them-143k",
+        "tags": [
+            "webdev",
+            "programming",
+            "productivity",
+            "python"
+        ],
+        "published_at": "2025-02-01T10:12:30Z"
+    },
+    {
+        "title": "The last odd",
+        "description": "Weekly Challenge 306   Each week Mohammad S. Anwar sends out The Weekly Challenge, a chance...",
+        "url": "https://dev.to/simongreennet/the-last-odd-kib",
+        "tags": [
+            "perl",
+            "python",
+            "theweeklychallenge"
+        ],
+        "published_at": "2025-02-02T12:12:46Z"
+    },
+    {
+        "title": "[Boost]",
+        "description": "The Ultimate Guide to Programming Languages: Choosing the Right...",
+        "url": "https://dev.to/mistarc/-16j0",
+        "tags": [
+            "python",
+            "java",
+            "rust"
+        ],
+        "published_at": "2025-02-01T09:47:40Z"
+    },
+    {
+        "title": "Relearning CompSci: Blackjack in Python",
+        "description": "For years I spent hours on computers in the school computer labs learning every language I could...",
+        "url": "https://dev.to/treybrown19/relearning-compsci-blackjack-in-python-eaj",
+        "tags": [
+            "python",
+            "terminal",
+            "codecademy"
+        ],
+        "published_at": "2025-02-01T16:13:41Z"
+    },
+    {
+        "title": "Ddd Python",
+        "description": "A post by William Koller",
+        "url": "https://dev.to/williamkoller/ddd-python-4hel",
+        "tags": [
+            "python"
+        ],
+        "published_at": "2025-02-01T02:45:05Z"
+    },
+    {
+        "title": "Python",
+        "description": "A post by ankita terkar",
+        "url": "https://dev.to/ankita_terkar_b29d03cc620/python-5f04",
+        "tags": [
+            "python"
+        ],
+        "published_at": "2025-02-01T06:53:02Z"
+    },
+    {
+        "title": "Understanding RAGAS: A Comprehensive Framework for RAG System Evaluation",
+        "description": "In the rapidly evolving landscape of artificial intelligence, Retrieval Augmented Generation (RAG)...",
+        "url": "https://dev.to/angu10/understanding-ragas-a-comprehensive-framework-for-rag-system-evaluation-447n",
+        "tags": [
+            "rag",
+            "ai",
+            "python",
+            "ragas"
+        ],
+        "published_at": "2025-02-01T01:40:23Z"
+    },
+    {
+        "title": "Predicting House Prices as Your First ML Project",
+        "description": "Machine Learning (ML) can seem intimidating at first, but the best way to learn is by doing. In this...",
+        "url": "https://dev.to/prezaei/predicting-house-prices-as-your-first-ml-project-1pdi",
+        "tags": [
+            "machinelearning",
+            "ai",
+            "datascience",
+            "python"
+        ],
+        "published_at": "2025-02-01T07:07:32Z"
+    },
+    {
+        "title": "Introduction to Set Theory with python",
+        "description": "A set is a collection of objects. For instance, let's say that 1, 2, 3 ,4, a ,b ,c , $ are objects. A...",
+        "url": "https://dev.to/eaarroyo/introduction-to-set-theory-with-python-3jol",
+        "tags": [
+            "python",
+            "settheory",
+            "discrete",
+            "math"
+        ],
+        "published_at": "2025-01-31T20:25:40Z"
+    },
+    {
+        "title": "Build a Time Tracking App with Tkinter and Pygame",
+        "description": "Building a Time Tracking App with Tkinter and Pygame in Python   Creating a graphical user...",
+        "url": "https://dev.to/flnzba/build-a-time-tracking-app-with-tkinter-and-pygame-1959",
+        "tags": [
+            "python",
+            "pygame",
+            "tkinter",
+            "productivity"
+        ],
+        "published_at": "2025-01-31T18:52:50Z"
+    },
+    {
+        "title": "Day 10 in Python Exercise",
+        "description": "Card Game in Python    General list concept Function call Engaging Challenging   Recently...",
+        "url": "https://dev.to/mihsa_instrudy/day-10-in-python-exercise-kdd",
+        "tags": [
+            "python",
+            "exercism",
+            "beginners",
+            "programming"
+        ],
+        "published_at": "2025-01-31T17:12:05Z"
+    },
+    {
+        "title": "Web Crawling and RSS Reading Made Easy",
+        "description": "Tired of building yet another RSS client or web crawler?  Don't worry - Crawler Buddy is here to save...",
+        "url": "https://dev.to/rumca-js/web-crawling-and-rss-reading-made-easy-5340",
+        "tags": [
+            "webscraping",
+            "rss",
+            "python"
+        ],
+        "published_at": "2025-01-31T15:46:11Z"
+    },
+    {
+        "title": "Maven Project - Call python executable",
+        "description": "If for any reason you need to compile one maven project (Java) with internally used Python, then you...",
+        "url": "https://dev.to/said_olano/maven-project-call-python-executable-3a5b",
+        "tags": [
+            "java",
+            "python",
+            "programming"
+        ],
+        "published_at": "2025-01-31T19:36:32Z"
+    }
+]
