@@ -308,40 +308,48 @@ def change_password_request():
     if err_msg:
         return jsonify({"status": "error", "message": err_msg}), 400
 
-    with get_session() as session:
-        rec = session.run("""
-            MATCH (s:Student {email: $e})
-            RETURN s.password AS pw_hash, s.name AS name,
-                   s.whatsapp_number AS wa, s.email AS email
-        """, e=payload["email"]).single()
+    try:
+        with get_session() as session:
+            rec = session.run("""
+                MATCH (s:Student {email: $e})
+                RETURN s.password_hash AS pw_hash, s.name AS name,
+                       s.whatsapp_number AS wa, s.email AS email
+            """, e=payload["email"]).single()
 
-    if not rec:
-        return jsonify({"status": "error", "message": "User not found"}), 404
+        if not rec:
+            return jsonify({"status": "error", "message": "User not found"}), 404
 
-    if not bcrypt.checkpw(old_password.encode(), rec["pw_hash"].encode()):
-        return jsonify({"status": "error", "message": "Current password is incorrect"}), 400
+        if not rec["pw_hash"]:
+            return jsonify({"status": "error", "message": "Account has no password (e.g. Google Login)"}), 400
 
-    otp = _gen_otp()
-    new_hash = bcrypt.hashpw(new_password.encode(), bcrypt.gensalt()).decode()
-    _pending[f"pw:{payload['email']}"] = {
-        "otp": otp, "expires": time.time() + _OTP_TTL, "pending": new_hash
-    }
+        if not bcrypt.checkpw(old_password.encode(), rec["pw_hash"].encode()):
+            return jsonify({"status": "error", "message": "Current password is incorrect"}), 400
 
-    name = (rec["name"] or "there").split()[0]
+        otp = _gen_otp()
+        new_hash = bcrypt.hashpw(new_password.encode(), bcrypt.gensalt()).decode()
+        _pending[f"pw:{payload['email']}"] = {
+            "otp": otp, "expires": time.time() + _OTP_TTL, "pending": new_hash
+        }
 
-    if method == 'whatsapp' and rec.get("wa"):
-        from api.services.whatsapp_service import send_whatsapp
-        body = (
-            f"🔑 *LearNexus Password Change*\n\n"
-            f"Your verification code is: *{otp}*\n\n"
-            f"Expires in 10 minutes. Do not share."
-        )
-        threading.Thread(target=send_whatsapp, args=(rec["wa"], body), daemon=True).start()
-        return jsonify({"status": "success", "method": "whatsapp"})
-    else:
-        from api.services.email_service import send_reset_code
-        threading.Thread(target=send_reset_code, args=(rec["email"], name, otp), daemon=True).start()
-        return jsonify({"status": "success", "method": "email"})
+        name = (rec["name"] or "there").split()[0]
+
+        if method == 'whatsapp' and rec.get("wa"):
+            from api.services.whatsapp_service import send_whatsapp
+            body = (
+                f"🔑 *LearNexus Password Change*\n\n"
+                f"Your verification code is: *{otp}*\n\n"
+                f"Expires in 10 minutes. Do not share."
+            )
+            threading.Thread(target=send_whatsapp, args=(rec["wa"], body), daemon=True).start()
+            return jsonify({"status": "success", "method": "whatsapp"})
+        else:
+            from api.services.email_service import send_reset_code
+            threading.Thread(target=send_reset_code, args=(rec["email"], name, otp), daemon=True).start()
+            return jsonify({"status": "success", "method": "email"})
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        return jsonify({"status": "error", "message": str(e)}), 500
 
 
 # ─── CHANGE PASSWORD — VERIFY ────────────────────────────
@@ -369,7 +377,7 @@ def change_password_verify():
         with get_session() as session:
             session.run("""
                 MATCH (s:Student {email: $email})
-                SET s.password = $pw
+                SET s.password_hash = $pw
             """, email=payload["email"], pw=new_hash)
         return jsonify({"status": "success", "message": "Password changed successfully"})
     except Exception as e:
@@ -388,7 +396,7 @@ def delete_account():
 
     with get_session() as session:
         rec = session.run(
-            "MATCH (s:Student {email: $e}) RETURN s.password AS pw_hash",
+            "MATCH (s:Student {email: $e}) RETURN s.password_hash AS pw_hash",
             e=payload["email"]
         ).single()
 

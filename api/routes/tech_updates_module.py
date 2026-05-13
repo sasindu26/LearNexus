@@ -64,7 +64,7 @@ def get_articles_for_module(module_name):
                 )
                 RETURN a.elementId as id, 
                        a.title as title, 
-                       a.full_description as description,
+                       coalesce(a.short_description, a.full_description) as description,
                        a.tags as tags,
                        a.url as url,
                        a.published_at as created_at
