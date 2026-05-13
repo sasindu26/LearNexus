@@ -1,0 +1,23 @@
+# Testing
+pytest>=6.0.0
+pytest-cov>=2.12.0
+pytest-mock>=3.6.0
+coverage>=5.5
+
+# Linting and formatting
+flake8>=3.9.0
+black>=21.5b2
+isort>=5.9.0
+mypy>=0.910
+
+# Development tools
+ipython>=7.26.0
+jupyter>=1.0.0
+notebook>=6.4.0
+
+# Documentation
+sphinx>=4.0.0
+sphinx-rtd-theme>=0.5.2
+
+# Debugging
+ipdb>=0.13.0

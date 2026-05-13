@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\sasin\Videos\fyp\project (1)\Learnexus\mento_repo\backfill_descriptions.py", line 34, in <module>
+    print(f"[{i+1}/{len(articles)}] {title}")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 9-10: character maps to <undefined>

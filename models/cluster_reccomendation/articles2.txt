@@ -1,0 +1,299 @@
+-------------------
+Title: Meme Monday
+Description: Meme Monday!  Today's cover image comes from last week's thread.  DEV is an inclusive space! Humor in...
+URL: https://dev.to/ben/meme-monday-4efm
+Tags: discuss, watercooler, jokes
+
+-------------------
+Title: Who's hiring (February 2025)
+Description: Developer advocates, product specialists, or technical writers?  If you're looking for a new...
+URL: https://dev.to/fmerian/whos-hiring-february-2025-a19
+Tags: career, devrel, writing, opensource
+
+-------------------
+Title: Attending Tech Conferences With a Toddler: A DevRel Mom’s Story
+Description: Introduction   My career didn't have to stop because I became a mother; if anything, my...
+URL: https://dev.to/vonagedev/attending-tech-conferences-with-a-toddler-a-devrel-moms-story-41np
+Tags: devrel
+
+-------------------
+Title: Congrats to the Agent.ai Challenge Winners!
+Description: The wait is over! We are excited to announce the winners of the Agent.ai Challenge.  From meal...
+URL: https://dev.to/devteam/congrats-to-the-agentai-challenge-winners-5eg5
+Tags: devchallenge, agentaichallenge, ai, machinelearning
+
+-------------------
+Title: Deploy Gemini-powered LangChain applications on GKE
+Description: Learn how to leverage Google Kubernetes Engine (GKE) to deploy an AI-powered LangChain application backed by Gemini.
+URL: https://dev.to/googlecloud/deploy-gemini-powered-langchain-applications-on-gke-42la
+Tags: kubernetes, ai, langchain, googlecloud
+
+-------------------
+Title: The Future of...
+Description: Hey folks! We wanted to let you know about our new subforem called Future. This is a dedicated space...
+URL: https://dev.to/devteam/the-future-of-4ml4
+Tags: forem, ai, science, blockchain
+
+-------------------
+Title: Derpify.js – a tool for these trying times…
+Description: Derpify is a JavaScript method to randomly upper and lowercase letters
+URL: https://dev.to/codepo8/derpifyjs-a-tool-for-these-trying-times-4gmg
+Tags: derp, javascript, stringmanipulation
+
+-------------------
+Title: New DEV++ Deal: 50% Off Trueguard. Early-bird pricing ends this month!
+Description: We're excited to announce our newest DEV++ membership deal!                  Trueguard    Trueguard...
+URL: https://dev.to/devteam/new-dev-deal-50-off-trueguard-early-bird-pricing-ends-this-month-4igk
+Tags: webdev, career, frontend, devops
+
+-------------------
+Title: Building a RESTful API with ASP.NET Core, Swagger, and Neon
+Description: In this guide, we'll walk through the process of developing a RESTful API using ASP.NET Core,...
+URL: https://dev.to/neon-postgres/building-a-restful-api-with-aspnet-core-swagger-and-neon-9el
+Tags: webdev, postgressql, programming, tutorial
+
+-------------------
+Title: Yay! I created my first Portfolio! 🎉
+Description: After months of hard work, I'm finally launching my portfolio to show the world.  I've always...
+URL: https://dev.to/anmolbaranwal/yay-i-created-my-first-portfolio-375
+Tags: portfolio, nextjs, showdev, programming
+
+-------------------
+Title: Qwen 2.5 Max vs. DeepSeek V3 (R1) Benchmark
+Description: Hi Everyone, I would like to compare Qwen 2.5 Max with DeepSeek V3 (R1) with benchmark details.      ...
+URL: https://dev.to/mehmetakar/qwen-25-max-vs-deepseek-v3-r1-benchmark-49be
+Tags: deepseek, qwen, deepseekvsqwen, ai
+
+-------------------
+Title: Personal update: I'm joining Bucket.co
+Description: A post by flo merian
+URL: https://dev.to/fmerian/personal-update-im-joining-bucketco-3b2c
+Tags: career, startup
+
+-------------------
+Title: Identify Unknowns, Weaknesses, and Risks in AI
+Description: There's a lot that can go wrong with AI. Let's talk about how to minimize that risk.
+URL: https://dev.to/leading-edje/identify-unknowns-weaknesses-and-risks-in-ai-1gi6
+Tags: ai, projects, projectmanagement, riskmanagement
+
+-------------------
+Title: What was your win this week!?
+Description: 👋👋👋👋  Looking back on your week -- what was something you're proud of?  All wins count -- big or...
+URL: https://dev.to/devteam/what-was-your-win-this-week-odp
+Tags: weeklyretro, discuss
+
+-------------------
+Title: Introducing Langflow.new: Frictionless AI
+Description: Langflow is DataStax’s flagship product for building generative AI flows and agents. Today, we’re...
+URL: https://dev.to/datastax/introducing-langflownew-frictionless-ai-42m4
+Tags: programming, ai, langflow
+
+-------------------
+Title: Principles of Web Accessibility
+Description: Heydon Pickering shared a set high-level guidelines on how to approach web accessibility
+URL: https://dev.to/alvaromontoro/principles-of-web-accessibility-1n78
+Tags: webdev, a11y
+
+-------------------
+Title: Report on the current state of Web Game Development in 2024 is out!
+Description: The results of the Gamedev.js Survey 2024 that was conducted last month, at the end of 2024, were...
+URL: https://dev.to/end3r/report-on-the-current-state-of-web-game-development-in-2024-is-out-12jd
+Tags: report, gamedev, gamedevjs, surveys
+
+-------------------
+Title: Is there Any Unique Project Ideas left?
+Description: Hi dev! We all know that to become a good dev we need to be unique in this competitive world and we...
+URL: https://dev.to/lakshita_kumawat/is-there-any-unique-project-ideas-left-1jl3
+Tags: developers, programming, help, discuss
+
+-------------------
+Title: Automated reasoning and generative AI: Harness creativity with formal verifications
+Description: The term "artificial intelligence" (AI) has an interesting origin story. In the summer of 1956, a...
+URL: https://dev.to/aws/automated-reasoning-and-generative-ai-harness-creativity-with-formal-verifications-o6
+Tags: ai, aws, machinelearning, security
+
+-------------------
+Title: What was your win this week?
+Description: 👋👋👋👋  Looking back on your week -- what was something you're proud of?  All wins count -- big or...
+URL: https://dev.to/devteam/what-was-your-win-this-week-2ek
+Tags: weeklyretro, discuss
+
+-------------------
+Title: Top 7 Featured DEV Posts of the Week
+Description: Welcome to this week's Top 7, where the DEV editorial team handpicks their favorite posts from the...
+URL: https://dev.to/devteam/top-7-featured-dev-posts-of-the-week-3ob4
+Tags: top7
+
+-------------------
+Title: Meme Monday
+Description: Meme Monday!  Today's cover image comes from last week's thread.  DEV is an inclusive space! Humor in...
+URL: https://dev.to/ben/meme-monday-419k
+Tags: discuss, watercooler, jokes
+
+-------------------
+Title: Go Beyond the Basics: Connecting Compute to Object Storage with the Official S3 Clients
+Description: Fastly Compute has consistently supported developers through its SDK with strong APIs for persistence...
+URL: https://dev.to/fastly/go-beyond-the-basics-connecting-compute-to-object-storage-with-the-official-s3-clients-4l9p
+Tags: fastly, serverless, webassembly, s3
+
+-------------------
+Title: How to Use the Langflow API in Node.js
+Description: Langflow is a fantastic low-code tool for building generative AI flows and agents. Once you've built...
+URL: https://dev.to/datastax/how-to-use-the-langflow-api-in-nodejs-2a12
+Tags: node, langflow, genai
+
+-------------------
+Title: The Best SQLite Browser
+Description: Hello again — it's Brandon, your friend from Outerbase, and today I'm back with another exciting...
+URL: https://dev.to/burcs/the-best-db-browser-for-sqlite-2pj4
+Tags: database, programming, webdev, beginners
+
+-------------------
+Title: Building Hounty: Baby steps
+Description: I've been building software for sixteen years. I've built countless websites, mobile apps, backend...
+URL: https://dev.to/valeriavg/building-an-app-baby-steps-2jb7
+Tags: startup, devjournal, webdev
+
+-------------------
+Title: Congrats to the GitHub Copilot 1-Day Build Challenge Winners!
+Description: Today’s the day! We are excited to announce the winners of the GitHub Copilot Challenge.  With over...
+URL: https://dev.to/devteam/congrats-to-the-github-copilot-1-day-build-challenge-winners-4iok
+Tags: devchallenge, githubchallenge, ai, webdev
+
+-------------------
+Title: AI, but at What Cost? Breakdown of AI’s Carbon Footprint
+Description: Listen to this article on Substack  Artificial Intelligence is exciting—the technological...
+URL: https://dev.to/tnahrf/ai-but-at-what-cost-breakdown-of-ais-carbon-footprint-4gf9
+Tags: ai, development, discuss, machinelearning
+
+-------------------
+Title: DeepSeek-R1 on Cursor with Ollama
+Description: So guys, there are many options using local llm but the DeepSeek-R1 is drop a weeks ago. If you want...
+URL: https://dev.to/basstimam/deepseek-r1-on-cursor-with-ollama-1pph
+Tags: cursor, ai, deepseek, llm
+
+-------------------
+Title: Why I Decided to Stop Working with React.js in 2025
+Description: After years of working with React, I’ve decided to move on. Here’s why React isn’t my framework of choice anymore.
+URL: https://dev.to/holasoymalva/why-i-decided-to-stop-working-with-reactjs-in-2025-4d1l
+Tags: javascript, react, node, programming
+
+-------------------
+Title: Understanding Neural Networks with Ruby
+Description: Neural networks are a fundamental part of modern artificial intelligence and machine learning. They...
+URL: https://dev.to/daviducolo/understanding-neural-networks-with-ruby-2n1d
+Tags: ai, machinelearning, ruby, computerscience
+
+-------------------
+Title: Top 7 Featured DEV Posts of the Week
+Description: Welcome to this week's Top 7, where the DEV editorial team handpicks their favorite posts from the...
+URL: https://dev.to/devteam/top-7-featured-dev-posts-of-the-week-gk6
+Tags: top7
+
+-------------------
+Title: DeepSeek Model on Tiananmen Square Censorship
+Description: There's a lot of posts and news about DeepSeek filtering political topics like Tiananmen Square and I...
+URL: https://dev.to/jeramos/deepseek-model-does-not-censor-tiananmen-square-2kcb
+Tags: ai, deepseek
+
+-------------------
+Title: Run DeepSeek-R1 on Your Laptop with Ollama
+Description: Yesterday, DeepSeek released a series of very powerful language models including DeepSeek R1 and a...
+URL: https://dev.to/shayy/run-deepseek-locally-on-your-laptop-37hl
+Tags: ai, llm, tutorial, productivity
+
+-------------------
+Title: Exploring User Privacy in Ollama: Are Local LLMs Truly Private?
+Description: Listen to this article on Substack  Ollama is a startup that offers an open-source tool for running...
+URL: https://dev.to/tnahrf/exploring-user-privacy-in-ollama-are-local-llms-truly-private-4g13
+Tags: ai, machinelearning, cybersecurity, opensource
+
+-------------------
+Title: How to Use Deepseek API and Enable Streaming Output for Debugging
+Description: Login to Deepseek Open Platform   First, log in to the Deepseek Open Platform to obtain the...
+URL: https://dev.to/auden/how-to-use-deepseek-api-and-enable-streaming-output-for-debugging-1ah9
+Tags: ai, deepseek, programming, api
+
+-------------------
+Title: My friend created this AI Agent that generates Podcast from Tweets - Loved it!
+Description: PodcastX - on demand Podcast &amp; Page generator AI Agent from...
+URL: https://dev.to/robinit/my-friend-created-this-ai-agent-that-generates-podcast-from-tweets-loved-it-4ck1
+Tags: devchallenge, agentaichallenge, ai, machinelearning
+
+-------------------
+Title: How to access DeepSeek r1?
+Description: Many people are struggling to get access to DeepSeek r1 at the moment because of the rate limits and...
+URL: https://dev.to/punkpeye/how-to-access-deepseek-r1-44na
+Tags: ai, deepseek
+
+-------------------
+Title: Meme Monday
+Description: Meme Monday!  Today's cover image comes from last week's thread.  DEV is an inclusive space! Humor in...
+URL: https://dev.to/ben/meme-monday-38kh
+Tags: discuss, watercooler, jokes
+
+-------------------
+Title: Responsible Innovation: Open Source Best Practices for Sustainable AI
+Description: Accelerate AI without sacrificing ethics. Discover red teaming, open source, and an AI Bill of Materials for secure, transparent AI development.
+URL: https://dev.to/bekahhw/responsible-innovation-open-source-best-practices-for-sustainable-ai-jei
+Tags: ai
+
+-------------------
+Title: RAG - Implementing the docs commands
+Description: This is the fourth article of a series in which I am building an open source RAG CLI tool. In the...
+URL: https://dev.to/this-is-learning/rag-implementing-the-docs-commands-3mfa
+Tags: ai, rag, cli, typescript
+
+-------------------
+Title: X Profile Roaster 🌶️🔥❤️‍🔥
+Description: This is a submission for the Agent.ai Challenge: Assembly of Agents (See Details)           What I...
+URL: https://dev.to/divya4879/x-profile-roaster-1ca0
+Tags: devchallenge, agentaichallenge, ai, machinelearning
+
+-------------------
+Title: Tailwind CSS 4.0 Is Here: What You Need to Know
+Description: Tailwind CSS 4.0 is here, and it's packed with updates that make styling your web projects faster,...
+URL: https://dev.to/shayy/tailwind-css-40-is-here-what-you-need-to-know-484h
+Tags: webdev, css, tailwindcss, javascript
+
+-------------------
+Title: Will AI Replace Your Job? How You Can Stay Ahead
+Description: The rapid evolution of artificial intelligence (AI) has left many professionals questioning their job...
+URL: https://dev.to/proxyos/will-ai-replace-your-job-how-you-can-stay-ahead-20ab
+Tags: ai, career, discuss, webdev
+
+-------------------
+Title: Creating An AI Agent For Kubernetes Performance Optimization
+Description: Instead of the continuous buzz/hype/notion/complete lie that “AI is going to take engineering jobs”,...
+URL: https://dev.to/thenjdevopsguy/creating-an-ai-agent-for-kubernetes-performance-optimization-2nl9
+Tags: kubernetes, ai, devops, cloud
+
+-------------------
+Title: Exploring OpenAI Operator
+Description: What Is Operator?   Have you ever wished you could push off repetitive online tasks to...
+URL: https://dev.to/burcs/exploring-openai-operator-your-ai-powered-browser-assistant-3dj2
+Tags: ai, webdev, database
+
+-------------------
+Title: What was your win this week?
+Description: 👋👋👋👋  Looking back on your week -- what was something you're proud of?  All wins count -- big or...
+URL: https://dev.to/devteam/what-was-your-win-this-week-5j6
+Tags: weeklyretro, discuss
+
+-------------------
+Title: What was your win this week?!
+Description: 👋👋👋👋  Looking back on your week -- what was something you're proud of?  All wins count -- big or...
+URL: https://dev.to/devteam/what-was-your-win-this-week-2eei
+Tags: weeklyretro, discuss
+
+-------------------
+Title: Showcase your open source project at SCALE 🐧 Pasadena, CA · March 6-9, 2025
+Description: Hi everyone! 👋  We're thrilled to invite open source maintainers to an amazing opportunity:...
+URL: https://dev.to/github/showcase-your-open-source-project-at-scale-pasadena-ca-march-6-9-2025-12kn
+Tags: github, linux, opensource
+
+-------------------
+Title: Lessons from A Philosophy of Software Design
+Description: I recently finished reading A Philosophy of Software Design by John Ousterhout. If you enjoyed Clean...
+URL: https://dev.to/thawkin3/lessons-from-a-philosophy-of-software-design-4cn7
+Tags: webdev, programming, books, softwareengineering
