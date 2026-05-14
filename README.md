@@ -1,10 +1,10 @@
 # LearNexus: AI-Powered Career Intelligence & Guidance Platform
 
-LearNexus (formerly Mento) is an end-to-end AI-driven learning and career progression platform tailored for IT students and freshers. It dynamically combines personalized degree tracking, real-time tech industry news, and career intelligence (job & certification recommendations) powered by a robust Neo4j knowledge graph and Large Language Models.
+LearNexus is an end-to-end AI-driven learning and career progression platform tailored for IT students and freshers. It dynamically combines personalized degree tracking, real-time tech industry news, and career intelligence (job & certification recommendations) powered by a robust Neo4j knowledge graph and Large Language Models.
 
 ## 🌟 Key Features
 
-### 1. Mento AI Assistant
+### 1. LearNexus AI Assistant
 A context-aware AI chatbot that acts as a personalized academic and career advisor. It guides users through course selection, answers module-specific questions, and provides tailored learning paths based on their current progress and skill profile.
 *   **Semantic Intent Thresholding:** The AI uses a finely-tuned cosine similarity threshold (0.3) against Neo4j embeddings to distinguish between casual chatter ("hi") and genuine academic intent ("I want to study data science"). This prevents premature degree recommendations while maintaining natural conversational fluidity.
 *   **Session Memory:** Supports multi-turn conversations via a configurable `session_id`. Each browser tab or user gets a persistent dialogue context, so follow-up questions like *"Tell me more about the 2nd one"* work naturally.
@@ -58,7 +58,7 @@ The platform is split into a Python/Flask Backend (this repository) and a Next.j
 ### API & Routing Layer
 *   **`tech_updates_for_fe.py` / `tech_updates_module.py`:** Serves categorized news to the frontend with a two-tier HTML sanitization strategy — backend strips tags and generates a clean `short_description` (≤300 chars), while frontend `stripHtml()` helpers act as a safety net.
 *   **`career_intelligence.py` / `job_recommendations.py`:** Executes complex Cypher queries to match a user's completed topic skills against job/certification requirements.
-*   **`module_chat.py`:** Handles the Mento AI conversation logic, maintaining context per module.
+*   **`module_chat.py`:** Handles the LearNexus AI conversation logic, maintaining context per module.
 *   **`auth.py` / `profile.py`:** Robust JWT-based authentication layer. Features safe error handling (e.g., catching missing password hashes for OAuth Google Logins) and secure OTP verification via Email and Green API (WhatsApp).
 *   **`new_chat_interface.py`:** Session-aware chat API with `session_id` passthrough for conversation memory and structured debug logging.
 
