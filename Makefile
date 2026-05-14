@@ -2,7 +2,7 @@
 # GLOBALS                                                                       #
 #################################################################################
 
-PROJECT_NAME = mento_repo
+PROJECT_NAME = learnexus
 PYTHON_VERSION = 3.11
 PYTHON_INTERPRETER = python3
 VENV_NAME = venv
@@ -58,7 +58,7 @@ lint:
 
 test:
 	. $(VENV_NAME)/bin/activate && \
-	pytest tests/ -v --cov=mento_repo
+	pytest tests/ -v --cov=learnexus
 
 format:
 	. $(VENV_NAME)/bin/activate && \

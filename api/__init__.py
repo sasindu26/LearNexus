@@ -1,7 +1,7 @@
 # This file makes the api directory a proper Python package
 
 """
-API package for the Mento application
+API package for the LearNexus AI application
 """
 
 # You can expose the create_app function here for cleaner imports

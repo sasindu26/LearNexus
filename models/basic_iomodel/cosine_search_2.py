@@ -26,7 +26,7 @@ class XAI:
         try:
             payload = {
                 "messages": [
-                    {"role": "system", "content": "You are MENTO, an educational advisor."},
+                    {"role": "system", "content": "You are LearNexus AI, an educational advisor."},
                     {"role": "user", "content": prompt}
                 ],
                 "model": "grok-2-latest",
@@ -253,7 +253,7 @@ class EducationalChatbot:
         # Direct to LLM if it's a question/greeting/negative sentiment
         if (is_question or sentiment_score < -0.1 or len(user_query.split()) <= 3):
             prompt = f"""
-            Your name is MENTO. You are an educational advisor who helps students.
+            Your name is LearNexus AI. You are an educational advisor who helps students.
             Current query: "{user_query}"
             Context: {'This appears to be a question.' if is_question else 'This appears to be a statement.'}
             Sentiment: {'negative' if sentiment_score < -0.1 else 'neutral or positive'}
@@ -275,7 +275,7 @@ class EducationalChatbot:
         if not courses:
             # If no courses match, use LLM for response
             prompt = f"""
-            Your name is MENTO. You are an educational advisor who helps students.
+            Your name is LearNexus AI. You are an educational advisor who helps students.
             Based on the query: "{user_query}"
             Recommend suitable courses from:
             - Computer Science

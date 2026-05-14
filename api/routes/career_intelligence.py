@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 career_bp = Blueprint('career_intelligence', __name__, url_prefix='/api/career')
 
-JWT_SECRET = os.getenv("JWT_SECRET", "learnexus_mento_secret_key_2026")
+JWT_SECRET = os.getenv("JWT_SECRET", "learnexus_ai_secret_key_2026")
 
 
 def _get_email(req):

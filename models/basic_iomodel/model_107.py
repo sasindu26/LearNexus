@@ -19,14 +19,14 @@ chat_prompt = ChatPromptTemplate.from_messages(
 )
 
 # Combine the Chat Prompt with the LLM and Output Parser
-mento_chat = chat_prompt | llm | StrOutputParser()
+learnexus_ai_chat = chat_prompt | llm | StrOutputParser()
 
 # Define the Tools
 tools = [
     Tool.from_function(
         name="General Chat",
         description="Answer general questions about IT education, courses, and career guidance.",
-        func=mento_chat.invoke,
+        func=learnexus_ai_chat.invoke,
     ),
     Tool.from_function(
         name="Vector Search",
@@ -103,7 +103,7 @@ def generate_response(user_input):
 
 # Example Test
 if __name__ == "__main__":
-    print("MENTO Chatbot: Type 'exit' to quit.")
+    print("LearNexus AI Chatbot: Type 'exit' to quit.")
     while True:
         user_input = input("You: ")
         if user_input.lower() in ["exit", "quit"]:

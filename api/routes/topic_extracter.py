@@ -17,7 +17,7 @@ import os
 from models.module_content.module_content import ModuleContentExtractor
 from config.logging_config import setup_logger
 
-JWT_SECRET = os.getenv("JWT_SECRET", "learnexus_mento_secret_key_2026")
+JWT_SECRET = os.getenv("JWT_SECRET", "learnexus_ai_secret_key_2026")
 
 # Setup logger
 logger = setup_logger('topic_extracter', 'topic_extracter.log')

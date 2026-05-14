@@ -42,7 +42,7 @@ def send_welcome(to: str, name: str) -> bool:
     Your account has been successfully created. You're officially part of the LearNexus learning community!
   </p>
   <p style="color:#555;line-height:1.8;margin-bottom:24px">
-    Chat with <strong>Mento AI</strong> to plan your learning path, explore your course modules,
+    Chat with <strong>LearNexus AI</strong> to plan your learning path, explore your course modules,
     and track your progress — all in one place.
   </p>
   <div style="text-align:center;margin:28px 0">

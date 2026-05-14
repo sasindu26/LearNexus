@@ -120,11 +120,11 @@ class GeminiService:
         """
         try:
             history = context.get('history', []) if context else []
-            history_text = "\n".join([f"{'User' if m['role'] == 'user' else 'Mento'}: {m['content']}" for m in history[-4:]])
+            history_text = "\n".join([f"{'User' if m['role'] == 'user' else 'LearNexus AI'}: {m['content']}" for m in history[-4:]])
             courses_text = ', '.join(available_courses) if available_courses else 'Not available'
             
             prompt = f"""
-            You are Mento AI, an expert university degree advisor for LearNexus. 
+            You are LearNexus AI, an expert university degree advisor for LearNexus.
             Students come to you because they don't have a clear idea of what course or degree they should do.
             
             Recent Chat History:
@@ -140,7 +140,7 @@ class GeminiService:
             2. If you don't have enough information, politely ask them what they are good at, what they enjoy doing, and what their career goals are.
             3. You MUST ONLY suggest degrees from the AVAILABLE DEGREES list. Do NOT invent or hallucinate other degrees.
             4. Keep responses encouraging, structured, and easy to read.
-            5. DO NOT start your response with an introduction like "Hi there, I'm Mento" if you have already introduced yourself in the history.
+            5. DO NOT start your response with an introduction like "Hi there, I'm LearNexus AI" if you have already introduced yourself in the history.
             
             Response should be in a conversational tone and under 150 words.
             """

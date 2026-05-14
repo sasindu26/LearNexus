@@ -18,7 +18,7 @@ NEO4J_USER = "neo4j"
 NEO4J_PASSWORD = "LearNexus1212"
 NEO4J_DB = "neo4j"
 
-JWT_SECRET = os.getenv("JWT_SECRET", "learnexus_mento_secret_key_2026")
+JWT_SECRET = os.getenv("JWT_SECRET", "learnexus_ai_secret_key_2026")
 
 driver = GraphDatabase.driver(NEO4J_URL, auth=(NEO4J_USER, NEO4J_PASSWORD))
 
@@ -503,7 +503,7 @@ def whatsapp_save():
                 send_whatsapp(phone,
                     f"🎓 *Welcome to LearNexus, {name}!*\n\n"
                     f"Your account is all set! 🎉\n\n"
-                    f"Start your personalised learning journey with *Mento AI* — "
+                    f"Start your personalised learning journey with *LearNexus AI* — "
                     f"explore modules, track progress, and achieve your goals.\n\n"
                     f"We're excited to have you on board! 📚\n\n"
                     f"_LearNexus — Learn Smarter_ ✨"

@@ -1,4 +1,4 @@
-# project_mento documentation!
+# LearNexus documentation!
 
 ## Description
 

@@ -15,7 +15,7 @@ logger = setup_logger('module_chat', 'module_chat.log')
 
 module_chat_bp = Blueprint('module_chat', __name__)
 
-SECRET_KEY = "learnexus_mento_secret_key_2026"
+SECRET_KEY = "learnexus_ai_secret_key_2026"
 URI = os.getenv("NEO4J_URI", "neo4j://localhost:7687")
 DB_USER = os.getenv("NEO4J_USER", "neo4j")
 PASSWORD = os.getenv("NEO4J_PASSWORD", "LearNexus1212")

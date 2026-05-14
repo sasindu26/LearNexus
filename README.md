@@ -1,4 +1,4 @@
-# project_mento
+# LearNexus
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
@@ -6,9 +6,9 @@
 
 ai supervisor for it freshers
 
-MENTO: AI-Powered Career Guidance for IT Freshers
+LearNexus AI: AI-Powered Career Guidance for IT Freshers
 
-MENTO is a generative AI project aimed at guiding IT freshers through the process of selecting the right courses, learning paths, and career paths. The system leverages machine learning models, Neo4j for knowledge management, and a chatbot interface to provide personalized recommendations.
+LearNexus AI is a generative AI project aimed at guiding IT freshers through the process of selecting the right courses, learning paths, and career paths. The system leverages machine learning models, Neo4j for knowledge management, and a chatbot interface to provide personalized recommendations.
 Project Structure
 
 This project is structured to follow best practices for data science and machine learning workflows. It includes separate folders for data, models, notebooks, and source code.
@@ -77,7 +77,7 @@ pip install -r requirements.txt
 │                         `1.0-jqp-initial-data-exploration`.
 │
 ├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         module_mento and configuration for tools like black
+│                         learnexus and configuration for tools like black
 │
 ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
 │
@@ -89,9 +89,9 @@ pip install -r requirements.txt
 │
 ├── setup.cfg          <- Configuration file for flake8
 │
-└── module_mento   <- Source code for use in this project.
+└── learnexus   <- Source code for use in this project.
     │
-    ├── __init__.py             <- Makes module_mento a Python module
+    ├── __init__.py             <- Makes learnexus a Python module
     │
     ├── config.py               <- Store useful variables and configuration
     │

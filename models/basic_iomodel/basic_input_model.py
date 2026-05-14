@@ -5,7 +5,7 @@ from langchain.schema import StrOutputParser
 # Define the prompt template
 template = """Question: {question}
 
-You are a guider Named "Mento" using AI for guide the students for higher education."""
+You are a guider Named "LearNexus AI" using AI for guide the students for higher education."""
 
 # Initialize OllamaLLM with the Code Llama model
 model = OllamaLLM(model="codellama")

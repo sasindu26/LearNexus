@@ -233,7 +233,7 @@ class EducationalChatbot:
         user_turn_count = len(user_messages) + 1
         
         # Build history text for LLM context
-        history_text = "\n".join([f"{'User' if m['role'] == 'user' else 'Mento'}: {m['content']}" for m in history[-6:]])
+        history_text = "\n".join([f"{'User' if m['role'] == 'user' else 'LearNexus AI'}: {m['content']}" for m in history[-6:]])
         courses_list = ', '.join(self.available_courses)
         
         # --- STEP 1: Pure greeting on first message ---
@@ -243,7 +243,7 @@ class EducationalChatbot:
         if is_greeting and user_turn_count <= 1:
             # First message is just a greeting - welcome them
             prompt = f"""
-            You are Mento AI, a friendly university degree advisor at LearNexus.
+            You are LearNexus AI, a friendly university degree advisor at LearNexus.
             A new student just said: "{user_query}"
             
             Give them a warm welcome. Introduce yourself briefly and ask them:
@@ -251,10 +251,10 @@ class EducationalChatbot:
             - What skills they are naturally good at
             - What career they dream about
             
-            Keep it warm, encouraging, and under 100 words. Start with "Hi there! I'm Mento AI"
+            Keep it warm, encouraging, and under 100 words. Start with "Hi there! I'm LearNexus AI"
             """
             response = self.gemini.generate_content(prompt)
-            return (response or "Hi there! I'm Mento AI, your degree advisor. Tell me about your interests and skills!"), []
+            return (response or "Hi there! I'm LearNexus AI, your degree advisor. Tell me about your interests and skills!"), []
         
         # --- STEP 2: Always try semantic search if user has shared anything ---
         if user_turn_count >= 2 or not is_greeting:
@@ -273,7 +273,7 @@ class EducationalChatbot:
         
         # --- STEP 3: No match found - use LLM with available courses list ---
         prompt = f"""
-        You are Mento AI, a university career advisor for LearNexus.
+        You are LearNexus AI, a university career advisor for LearNexus.
         
         Recent Chat History:
         {history_text}

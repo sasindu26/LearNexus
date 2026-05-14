@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Main entry point for the Mento application.
+Main entry point for the LearNexus AI application.
 """
 import os
 import sys
@@ -12,7 +12,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
-logger = logging.getLogger('mento_app')
+logger = logging.getLogger('learnexus_app')
 
 project_root = os.path.abspath(os.path.dirname(__file__))
 sys.path.append(project_root)
@@ -62,7 +62,7 @@ def _start_daily_scheduler():
 from api.main_app import create_app
 
 if __name__ == "__main__":
-    logger.info("Starting Mento application")
+    logger.info("Starting LearNexus AI application")
     app = create_app()
 
     # Start background daily scraping (daemon so it stops when Flask stops)
