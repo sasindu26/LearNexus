@@ -49,7 +49,7 @@ class AcademicRAGAPI:
         # Define chat method with correct context
         def chat_handler():
             """
-            Handle chat interactions
+            Handle chat interactions with session memory support
             """
             try:
                 # Parse incoming JSON data
@@ -62,20 +62,34 @@ class AcademicRAGAPI:
                         "message": "Invalid input. 'message' field is required."
                     }), 400
                 
+                # Session memory: extract session_id (defaults to "web-session")
+                session_id = data.get("session_id", "web-session")
+                
+                # Debug logging — request
+                self.logger.info(f"Received message from session: {session_id}")
+                self.logger.info(f"User message: {data['message'][:120]}")
+                
                 # Prepare input dictionary for the assistant
                 input_dict = {"input": data['message']}
                 
-                # Invoke chat with input
-                response = self.assistant.invoke(input_dict)
+                # Invoke chat with session-aware config for conversation memory
+                response = self.assistant.invoke(
+                    input_dict,
+                    {"configurable": {"session_id": session_id}}
+                )
                 
-                # Return response in the format expected by frontend
+                # Debug logging — response
+                output = response.get('output', 'No response')
+                self.logger.info(f"Response for session {session_id}: {output[:120]}")
+                
+                # Return response in the stable format expected by frontend
                 return jsonify({
                     "status": "success",
-                    "message": response.get('output', 'No response')
+                    "message": output
                 })
             
             except Exception as e:
-                self.logger.error(f"Chat handling error: {e}")
+                self.logger.error(f"Chat handling error for session {data.get('session_id', 'unknown') if data else 'unknown'}: {e}")
                 return jsonify({
                     "status": "error",
                     "message": str(e)

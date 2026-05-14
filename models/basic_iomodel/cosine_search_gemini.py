@@ -71,7 +71,7 @@ class EducationalChatbot:
             print(f"Connection failed: {e}")
             return False
 
-    def semantic_search_courses(self, user_query: str, threshold: float = 0.2) -> List[Dict[str, Any]]:
+    def semantic_search_courses(self, user_query: str, threshold: float = 0.3) -> List[Dict[str, Any]]:
         """
         Perform semantic search for courses based on user query
         
