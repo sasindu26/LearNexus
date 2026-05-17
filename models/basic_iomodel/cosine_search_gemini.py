@@ -1,7 +1,6 @@
 import os
 import numpy as np
 from neo4j import GraphDatabase
-from sentence_transformers import SentenceTransformer
 from models.services.gemini_service import GeminiService
 from typing import List, Dict, Any, Tuple
 import nltk
@@ -34,7 +33,8 @@ class EducationalChatbot:
             print(f"Error connecting to Neo4j: {e}")
             raise
 
-        # Embedding Model for Semantic Search
+        # Embedding Model for Semantic Search — imported lazily to reduce startup memory
+        from sentence_transformers import SentenceTransformer
         self.embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
         
         # Initialize Gemini Service

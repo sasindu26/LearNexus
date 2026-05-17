@@ -7,7 +7,6 @@ import sys
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
 sys.path.append(project_root)
 
-from models.basic_iomodel import cosine_search_gemini
 from config.logging_config import setup_logger
 
 # Setup logger
@@ -32,6 +31,7 @@ def initialize_chatbot():
     """Initialize the chatbot with error handling."""
     global chat_agent
     try:
+        from models.basic_iomodel import cosine_search_gemini
         chat_agent = cosine_search_gemini.EducationalChatbot(neo4j_config)
         if not chat_agent.connect():
             print("Failed to connect to the database")
