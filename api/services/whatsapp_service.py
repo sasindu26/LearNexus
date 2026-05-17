@@ -6,8 +6,8 @@ import requests
 
 logger = logging.getLogger(__name__)
 
-GREEN_API_URL   = os.getenv("GREEN_API_URL", "https://7107.api.greenapi.com")
-GREEN_API_ID    = os.getenv("GREEN_API_ID", "")
+GREEN_API_URL = os.getenv("GREEN_API_URL", "https://7107.api.greenapi.com")
+GREEN_API_ID = os.getenv("GREEN_API_ID", "")
 GREEN_API_TOKEN = os.getenv("GREEN_API_TOKEN", "")
 
 # In-memory OTP store: {phone: {"otp": "123456", "expires": float}}

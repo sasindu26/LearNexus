@@ -1,4 +1,4 @@
-from flask import Blueprint, request, jsonify, current_app
+from flask import Blueprint, request, jsonify
 import traceback
 import os
 import sys
@@ -13,9 +13,8 @@ from neo4j import GraphDatabase
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
 sys.path.append(project_root)
 
-import os
-from models.module_content.module_content import ModuleContentExtractor
-from config.logging_config import setup_logger
+from models.module_content.module_content import ModuleContentExtractor  # noqa: E402
+from config.logging_config import setup_logger  # noqa: E402
 
 JWT_SECRET = os.getenv("JWT_SECRET", "learnexus_ai_secret_key_2026")
 
@@ -77,7 +76,7 @@ def get_topic_resources(topic_name):
             # 3. Auto-generate if not found
             logger.info(f"No resources found for {topic_name}. Auto-generating...")
             new_resources = generate_topic_resources(topic_name)
-            
+
             # 4. Add generic YouTube search link as fallback/bonus
             youtube_url = f"https://www.youtube.com/results?search_query={urllib.parse.quote(topic_name + ' tutorial')}"
             new_resources.append({'title': f"{topic_name} Video Tutorials", 'url': youtube_url, 'type': 'Video'})
@@ -132,7 +131,7 @@ def get_module_content(module_name):
         # Initialize content extractor and get topics
         content_extractor = ModuleContentExtractor()
         raw_topics = content_extractor.get_module_content(decoded_module_name)
-        
+
         logger.info(f"Retrieved {len(raw_topics)} raw topics")
         logger.debug(f"Raw topics: {raw_topics}")
 
@@ -158,7 +157,7 @@ def get_module_content(module_name):
         for idx, topic in enumerate(raw_topics):
             topic_name = topic.get("topic", "Unnamed Topic")
             is_completed = topic_name in completed_topics
-            
+
             formatted_topic = {
                 "id": f"topic-{idx}",
                 "name": topic_name,
@@ -176,7 +175,7 @@ def get_module_content(module_name):
         # Prepare response
         response_data = formatted_topics if formatted_topics else []
         logger.info(f"Sending response with {len(response_data)} topics")
-        
+
         # Create response
         response = jsonify(response_data)
         return response, 200
@@ -190,4 +189,3 @@ def get_module_content(module_name):
     finally:
         if content_extractor:
             content_extractor.close()
-

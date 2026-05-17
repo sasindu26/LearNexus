@@ -7,7 +7,7 @@ from email.mime.multipart import MIMEMultipart
 logger = logging.getLogger(__name__)
 
 def _send(to: str, subject: str, html: str) -> bool:
-    from_email    = os.getenv("LEARNEXUS_EMAIL", "")
+    from_email = os.getenv("LEARNEXUS_EMAIL", "")
     from_password = os.getenv("LEARNEXUS_EMAIL_PASSWORD", "")
     if not from_email or not from_password:
         logger.warning("Email not configured — set LEARNEXUS_EMAIL and LEARNEXUS_EMAIL_PASSWORD env vars")
@@ -15,8 +15,8 @@ def _send(to: str, subject: str, html: str) -> bool:
     try:
         msg = MIMEMultipart("alternative")
         msg["Subject"] = subject
-        msg["From"]    = f"LearNexus <{from_email}>"
-        msg["To"]      = to
+        msg["From"] = f"LearNexus <{from_email}>"
+        msg["To"] = to
         msg.attach(MIMEText(html, "html"))
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
             s.login(from_email, from_password)

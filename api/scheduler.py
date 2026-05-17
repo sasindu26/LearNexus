@@ -104,7 +104,8 @@ def _check_inactivity():
 def _run_article_pipeline():
     """Scrape fresh tech articles and store in Neo4j with cover images."""
     try:
-        import sys, os
+        import sys
+        import os
         pipeline_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'models', 'pipeline'))
         if pipeline_dir not in sys.path:
             sys.path.insert(0, pipeline_dir)
