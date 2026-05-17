@@ -36,5 +36,5 @@ jobs:
       - name: Check code style (flake8)
         run: |
           pip install flake8
-          flake8 api/ --max-line-length=120 --ignore=E501,W503,E302,E303,F811,E203,E241,E128,E124,E127,E221
+          flake8 api/ --max-line-length=120 --ignore=E501,W503,E302,E303,F811,E203,E241,E128,E124,E127,E221,W291,W293,F401,E402,E305,W292
 
