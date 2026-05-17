@@ -18,24 +18,21 @@ chat_bp = Blueprint('chat_bot', __name__)
 
 # Neo4j Configuration
 neo4j_config = {
-    "url": "bolt://localhost:7687",
-    "username": "neo4j",
-    "password": "LearNexus1212",
+    "url": os.getenv("NEO4J_URI", "bolt://localhost:7687"),
+    "username": os.getenv("NEO4J_USER", "neo4j"),
+    "password": os.getenv("NEO4J_PASSWORD", "LearNexus1212"),
     "database": "neo4j"
 }
 
-# Global Chatbot Instance
+# Global Chatbot Instance — loaded lazily on first request
 chat_agent = None
 
+
 def initialize_chatbot():
-    """
-    Initialize the chatbot with error handling
-    """
+    """Initialize the chatbot with error handling."""
     global chat_agent
     try:
         chat_agent = cosine_search_gemini.EducationalChatbot(neo4j_config)
-        
-        # Verify database connection
         if not chat_agent.connect():
             print("Failed to connect to the database")
             return False
@@ -45,17 +42,15 @@ def initialize_chatbot():
         traceback.print_exc()
         return False
 
-# Initialize chatbot when module is loaded
-if initialize_chatbot():
-    print("Chatbot initialized successfully")
-else:
-    print("Failed to initialize chatbot")
-
 @chat_bp.route('/chat', methods=['POST'])
 def chat():
     """
     Main chat endpoint to process user messages
     """
+    global chat_agent
+    if chat_agent is None:
+        initialize_chatbot()
+
     try:
         # Validate chatbot initialization
         if chat_agent is None:
