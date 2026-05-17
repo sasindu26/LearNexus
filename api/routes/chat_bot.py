@@ -47,7 +47,6 @@ def chat():
     """
     Main chat endpoint to process user messages
     """
-    global chat_agent
     if chat_agent is None:
         initialize_chatbot()
 
