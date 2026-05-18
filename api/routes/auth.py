@@ -16,7 +16,7 @@ auth_bp = Blueprint('auth', __name__, url_prefix='/api/auth')
 NEO4J_URL = os.getenv("NEO4J_URI", "bolt://localhost:7687")
 NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
 NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "LearNexus1212")
-NEO4J_DB = "neo4j"
+NEO4J_DB = os.getenv("NEO4J_DATABASE", "neo4j")
 
 JWT_SECRET = os.getenv("JWT_SECRET", "learnexus_ai_secret_key_2026")
 

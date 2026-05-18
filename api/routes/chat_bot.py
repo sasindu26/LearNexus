@@ -20,7 +20,7 @@ neo4j_config = {
     "url": os.getenv("NEO4J_URI", "bolt://localhost:7687"),
     "username": os.getenv("NEO4J_USER", "neo4j"),
     "password": os.getenv("NEO4J_PASSWORD", "LearNexus1212"),
-    "database": "neo4j"
+    "database": os.getenv("NEO4J_DATABASE", "neo4j")
 }
 
 # Global Chatbot Instance — loaded lazily on first request
