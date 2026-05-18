@@ -12,18 +12,25 @@ from neo4j import GraphDatabase
 # Setup
 auth_bp = Blueprint('auth', __name__, url_prefix='/api/auth')
 
-# Neo4j Configuration (same as chat_bot.py)
-NEO4J_URL = "bolt://localhost:7687"
-NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "LearNexus1212"
+# Neo4j Configuration
+NEO4J_URL = os.getenv("NEO4J_URI", "bolt://localhost:7687")
+NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
+NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "LearNexus1212")
 NEO4J_DB = "neo4j"
 
 JWT_SECRET = os.getenv("JWT_SECRET", "learnexus_ai_secret_key_2026")
 
-driver = GraphDatabase.driver(NEO4J_URL, auth=(NEO4J_USER, NEO4J_PASSWORD))
+try:
+    driver = GraphDatabase.driver(NEO4J_URL, auth=(NEO4J_USER, NEO4J_PASSWORD))
+except Exception as _e:
+    import logging
+    logging.getLogger(__name__).error(f"Failed to create Neo4j driver: {_e}")
+    driver = None
 
 
 def get_session():
+    if driver is None:
+        raise RuntimeError("No database connection available")
     return driver.session(database=NEO4J_DB)
 
 
