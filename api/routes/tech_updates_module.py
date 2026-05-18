@@ -11,19 +11,16 @@ tech_module_bp = Blueprint('tech_module', __name__)
 
 # Neo4j connection setup - update to use the same URI format as in tech_updates_to_module.py
 # Change from neo4j:// protocol to bolt:// protocol as that seems to work in your other file
-URI = "bolt://localhost:7687"  # Using bolt protocol instead of neo4j protocol
-USERNAME = "neo4j"
-PASSWORD = "LearNexus1212"
+import os
+URI = os.getenv("NEO4J_URI", "bolt://localhost:7687")
+USERNAME = os.getenv("NEO4J_USER", "neo4j")
+PASSWORD = os.getenv("NEO4J_PASSWORD", "LearNexus1212")
 
-# Create driver with max retry time to handle connection issues
+# Create driver — connection is verified lazily on first use, not at startup
 try:
     driver = GraphDatabase.driver(URI, auth=(USERNAME, PASSWORD), max_connection_lifetime=3600)
-    # Verify connection is working
-    with driver.session() as session:
-        session.run("RETURN 1")
-        logger.info("Successfully connected to Neo4j database")
 except Exception as e:
-    logger.error(f"Failed to connect to Neo4j database: {e}")
+    logger.error(f"Failed to create Neo4j driver: {e}")
     driver = None
 
 def get_articles_for_module(module_name):
