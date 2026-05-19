@@ -17,7 +17,7 @@ JWT_SECRET     = os.getenv("JWT_SECRET", "learnexus_ai_secret_key_2026")
 
 try:
     driver = GraphDatabase.driver(NEO4J_URL, auth=(NEO4J_USER, NEO4J_PASSWORD))
-except Exception as _e:
+except Exception:
     driver = None
 
 def get_session():
