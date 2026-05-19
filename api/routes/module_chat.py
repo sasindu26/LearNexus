@@ -20,8 +20,19 @@ URI = os.getenv("NEO4J_URI", "neo4j://localhost:7687")
 DB_USER = os.getenv("NEO4J_USER", "neo4j")
 PASSWORD = os.getenv("NEO4J_PASSWORD", "LearNexus1212")
 
-driver = GraphDatabase.driver(URI, auth=(DB_USER, PASSWORD))
-gemini = GeminiService()
+try:
+    driver = GraphDatabase.driver(URI, auth=(DB_USER, PASSWORD))
+except Exception:
+    driver = None
+
+_gemini = None
+
+
+def _get_gemini():
+    global _gemini
+    if _gemini is None:
+        _gemini = GeminiService()
+    return _gemini
 
 
 def _user_id_from_token(auth_header: str) -> str:
@@ -158,7 +169,7 @@ LearNexus AI:"""
     _save_message(user_id, module_name, "user", user_message)
 
     # Generate AI response
-    response = gemini.generate_content(prompt)
+    response = _get_gemini().generate_content(prompt)
     if not response:
         response = "I'm sorry, I couldn't generate a response right now. Please try again."
 
