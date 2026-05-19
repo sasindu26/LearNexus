@@ -8,22 +8,32 @@ on:
 
 jobs:
 
-  # ─── BACKEND CHECK ───────────────────────────
-  backend:
-    name: Backend (Python / Flask)
+  # ─── 1) LINT — fast style check ────────────────────────
+  lint:
+    name: Lint (flake8)
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install flake8
+        run: pip install flake8
+      - name: Run flake8
+        run: flake8 api/ --max-line-length=120 --ignore=E501,W503,E302,E303,F811,E203,E241,E128,E124,E127,E221,W291,W293,F401,E402,E305,W292,E271,E231
 
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v4
+  # ─── 2) IMPORT TEST — catches missing packages and module-level crashes ─────
+  import-test:
+    name: Import Test (catches missing deps)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Cache pip packages
-        uses: actions/cache@v3
+      - name: Cache pip
+        uses: actions/cache@v4
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
@@ -33,8 +43,89 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Check code style (flake8)
+      - name: Import Flask app
+        env:
+          NEO4J_URI: bolt://localhost:7687
+          NEO4J_USER: neo4j
+          NEO4J_PASSWORD: dummy
+          GEMINI_API_KEY: dummy
+          DISABLE_EMBEDDINGS: "true"
         run: |
-          pip install flake8
-          flake8 api/ --max-line-length=120 --ignore=E501,W503,E302,E303,F811,E203,E241,E128,E124,E127,E221,W291,W293,F401,E402,E305,W292,E271,E231
+          python -c "from api.main_app import create_app; app = create_app(); print('Flask app boots OK')"
 
+  # ─── 3) HEALTH CHECK — verifies the / endpoint returns 200 ─────
+  health-test:
+    name: Health Endpoint Test
+    runs-on: ubuntu-latest
+    needs: import-test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Hit / endpoint with Flask test client
+        env:
+          NEO4J_URI: bolt://localhost:7687
+          NEO4J_USER: neo4j
+          NEO4J_PASSWORD: dummy
+          GEMINI_API_KEY: dummy
+          DISABLE_EMBEDDINGS: "true"
+        run: |
+          python - <<'PY'
+          from api.main_app import create_app
+          app = create_app()
+          client = app.test_client()
+          r = client.get('/')
+          assert r.status_code == 200, f"Expected 200, got {r.status_code}"
+          data = r.get_json()
+          assert data.get('status') == 'Server is running', f"Unexpected payload: {data}"
+          print('OK — health endpoint returned 200')
+          PY
+
+  # ─── 4) LIVE SMOKE TEST — checks the deployed Render backend ─────
+  live-smoke:
+    name: Live Smoke Test (Render)
+    runs-on: ubuntu-latest
+    needs: health-test
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - name: Wait for Render to deploy
+        run: sleep 60
+
+      - name: Health endpoint
+        run: |
+          curl -fsS https://learnexus-api.onrender.com/ \
+            | grep -q "Server is running" \
+            && echo "✓ Health OK" \
+            || (echo "✗ Health failed" && exit 1)
+
+      - name: World trending
+        run: |
+          curl -fsS "https://learnexus-api.onrender.com/api/world-trending?limit=5" > /dev/null \
+            && echo "✓ World trending OK" \
+            || (echo "✗ World trending failed" && exit 1)
+
+      - name: Auth preflight (CORS)
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            -X OPTIONS https://learnexus-api.onrender.com/api/auth/google \
+            -H "Origin: https://learnexusfrontend.vercel.app" \
+            -H "Access-Control-Request-Method: POST")
+          if [ "$STATUS" = "200" ] || [ "$STATUS" = "204" ]; then
+            echo "✓ CORS preflight OK ($STATUS)"
+          else
+            echo "✗ CORS preflight failed ($STATUS)"
+            exit 1
+          fi
