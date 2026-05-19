@@ -94,11 +94,44 @@ jobs:
           print('OK — health endpoint returned 200')
           PY
 
-  # ─── 4) LIVE SMOKE TEST — checks the deployed Render backend ─────
+  # ─── 4) FUNCTIONAL TESTS — pytest suite against the Flask test client ─────
+  functional-test:
+    name: Functional Tests (pytest)
+    runs-on: ubuntu-latest
+    needs: import-test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest pytest-cov
+
+      - name: Run pytest with coverage
+        env:
+          NEO4J_URI: bolt://localhost:7687
+          NEO4J_USER: neo4j
+          NEO4J_PASSWORD: dummy
+          GEMINI_API_KEY: dummy
+          DISABLE_EMBEDDINGS: "true"
+        run: |
+          pytest tests/ -v --tb=short --cov=api --cov-report=term-missing
+
+  # ─── 5) LIVE SMOKE TEST — checks the deployed Render backend ─────
   live-smoke:
     name: Live Smoke Test (Render)
     runs-on: ubuntu-latest
-    needs: health-test
+    needs: functional-test
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
       - name: Wait for Render to deploy
