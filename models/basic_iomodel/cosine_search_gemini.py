@@ -33,9 +33,16 @@ class EducationalChatbot:
             print(f"Error connecting to Neo4j: {e}")
             raise
 
-        # Embedding Model for Semantic Search — imported lazily to reduce startup memory
-        from sentence_transformers import SentenceTransformer
-        self.embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+        # Embedding model for semantic search — optional. On low-memory tiers
+        # (e.g., Render free 512MB) loading SentenceTransformer can OOM the worker.
+        # If it fails or is disabled, fall back to LLM-only course recommendations.
+        self.embedding_model = None
+        if os.getenv("DISABLE_EMBEDDINGS", "false").lower() != "true":
+            try:
+                from sentence_transformers import SentenceTransformer
+                self.embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+            except Exception as e:
+                print(f"[Chatbot] SentenceTransformer load failed ({e}); using LLM-only recommendations.")
         
         # Initialize Gemini Service
         self.gemini = GeminiService()
@@ -79,6 +86,10 @@ class EducationalChatbot:
         :param threshold: Similarity threshold for course matching
         :return: List of matching courses
         """
+        # Skip semantic search if embedding model isn't loaded (low-memory tier)
+        if self.embedding_model is None:
+            return []
+
         # Generate embedding for user query
         query_embedding = self.embedding_model.encode(user_query).tolist()
         

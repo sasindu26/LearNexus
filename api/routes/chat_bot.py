@@ -62,8 +62,10 @@ def _prewarm():
     print("Chatbot pre-warm complete." if chat_agent else "Chatbot pre-warm failed.")
 
 
-# Start background pre-warm when the blueprint is imported
-threading.Thread(target=_prewarm, daemon=True).start()
+# Pre-warm is off by default on Render free tier (SentenceTransformer + PyTorch >
+# 512MB combined with the rest of the app). Set PREWARM_CHATBOT=true to enable.
+if os.getenv("PREWARM_CHATBOT", "false").lower() == "true":
+    threading.Thread(target=_prewarm, daemon=True).start()
 
 
 @chat_bp.route('/chat', methods=['POST'])

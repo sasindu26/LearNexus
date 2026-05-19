@@ -133,13 +133,15 @@ def start_scheduler():
         # Article pipeline — daily at 06:00
         scheduler.add_job(_run_article_pipeline, "cron", hour=6, minute=0, id="article_pipeline")
 
-        # Also run the pipeline once on startup (30s delay so the app boots first)
-        scheduler.add_job(
-            _run_article_pipeline,
-            "date",
-            run_date=datetime.now() + timedelta(seconds=30),
-            id="article_pipeline_startup",
-        )
+        # Run the pipeline once on startup (off by default — loads ML models, OOMs 512MB tiers).
+        # Set RUN_PIPELINE_ON_STARTUP=true to enable locally.
+        if os.getenv("RUN_PIPELINE_ON_STARTUP", "false").lower() == "true":
+            scheduler.add_job(
+                _run_article_pipeline,
+                "date",
+                run_date=datetime.now() + timedelta(seconds=30),
+                id="article_pipeline_startup",
+            )
 
         scheduler.start()
         logger.info("Scheduler started — inactivity daily 09:00, articles daily 06:00 + on startup")
