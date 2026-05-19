@@ -8,8 +8,6 @@ logger = logging.getLogger(__name__)
 NEO4J_URI = os.getenv("NEO4J_URI", "bolt://localhost:7687")
 NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
 NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "LearNexus1212")
-NEO4J_DB = os.getenv("NEO4J_DB", "neo4j")
-
 _driver = None
 
 
@@ -21,7 +19,7 @@ def get_driver():
 
 
 def get_session():
-    return get_driver().session(database=NEO4J_DB)
+    return get_driver().session()
 
 
 def close_driver():
